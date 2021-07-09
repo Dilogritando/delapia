@@ -7,7 +7,8 @@
     <title>Postres De la Pía</title>
 </head>
 <body>
-    <div class="topbar">Pedidos y domicilios: </div>
+    <div class="topbar">Pedidos y domicilios en Bogotá, Colombia: <a href="tel:+573107910978">
+        +57 310 7910978</a></div>
     <header>
         <img src="" alt="Logo De la Pía">
         <h1>Postres De la Pía</h1>
@@ -39,7 +40,8 @@
                                 <li class="ponques_item">
                                     <a href="">Ponqué de limón con amapola</a></li>
                                 <li class="ponques_item">
-                                    <a href=""></a>Ponqué de la abuela</li>
+                                    <a href="">Ponqué de la abuela</a>
+                                </li>
                                 <li class="ponques_item">
                                     <a href="">Ponqués Personalizados</a>
                                 </li>
@@ -80,37 +82,114 @@
                     </ul>
                 </li>
                 <li class="nav_options_categories">
-                    Zona de cobertura
+                    <a href="http://">Zona de cobertura</a>
                 </li>
                 <li class="nav_options_categories">
-                    Sobre la chef pastelera
+                    <a href="http://">Sobre la chef pastelera</a>
                 </li>
                 <li class="nav_options_categories">
-                    Preguntas frecuentes
+                    <a href="http://">Preguntas frecuentes</a>
                 </li>
             </ul>
         </nav>
     </header>
     <main>
         <section class="formulario">
-            <h2>Escoge tu postre De La Pía</h2>
-            <article class="formulario_parteUno">
-                Tipo de postre
-            </article>
-            <article class="formulario_parteDos">
-                Tamaño
-            </article>
-            <article class="formulario_parteTres">
-                Tipo (opciones)
-            </article>
-            <article class="formulario_parteCuatro">
-                Personaliza (Frutas, cubiertas, tarjeta)
-            </article>
-            <article class="formulario_valida">
-                Valida zona de cobertura
-            </article>
+            <h2>Pide tu postre seleccionando entre todas las opciones disponibles</h2>
+            <form action="">
+                <fieldset class="formulario_tipo">
+                    <legend>
+                        Escoge tu postre De La Pía
+                    </legend>
+                    <br>
+                    <br>
+                    <label for="postres">¿Qué tipo de postre deseas?</label>
+                        <select id="postres-list">
+                            <option value="placeholder">Selecciona tu favorito</option>
+                            <optgroup label="Pies">
+                                <option value="limon">Pie de limón</option>
+                                <option value="fresa">Pie de fresa</option>
+                                <option value="guanabana">Pie de guanábana</option>
+                                <option value="mango">Pie de mango</option>
+                                <option value="frutas">Pie de frutas frescas</option>
+                                <option value="personalizados">Pie personalizado</option>
+                            </optgroup>
+                            <optgroup label="Ponqués">
+                                <option value="chocolate">Ponqué de chocolate</option>
+                                <option value="piña">Ponqué de limón piña con ciruelas</option>
+                                <option value="limon">Ponqué de limón con amapola</option>
+                                <option value="abuela">Ponqué de la abuela</option>
+                                <option value="personalizado">Ponqué personalizado</option>
+                            </optgroup>
+                            <optgroup label="Quiche">
+                                <option value="espinaca">Quiche de espinaca</option>
+                                <option value="acelga">Quiche de acelga</option>
+                            </optgroup>
+                            <optgroup label="Galletas">
+                                <option value="alfajores">Alfajores de arequipe con coco</option>
+                                <option value="galletas">Galletas de chocolate</option>
+                            </optgroup>
+                        </select>
+                        <br>
+                        <br>
+                    <fieldset class="formulario_size">
+                        <legend>
+                            Tamaño o porciones
+                        </legend>
+                        <ul>
+                            <li>
+                                <input type="radio" name="tamaño" id="size_1" value="individual">
+                                <label for="size_1">Individual</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="tamaño" id="size_2" value="small">
+                                <label for="size_2">Pequeño - 4 a 8 personas</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="tamaño" id="size_3" value="medium">
+                                <label for="size_3">Mediano - 8 a 10 personas</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="tamaño" id="size_4" value="large">
+                                <label for="size_4">Grande - 10 a 12 personas</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="tamaño" id="size_5" value="xlarge">
+                                <label for="size_5">Extra grande - 12 a 14 personas</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="tamaño" id="size_6" value="family">
+                                <label for="size_6">Familiar - 15 a 20 personas</label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                    <br>
+                    <br>
+                    <fieldset class="formulario_personaliza">
+                        <legend>
+                            Personaliza tu pedido
+                        </legend>
+                        <input type="checkbox" id="regalo" name="regalo" value="Tarjeta">
+                        <label for="regalo"> Incluir tarjeta de regalo</label><br>
+                        <input type="checkbox" id="decorFrutas" name="decorFrutas" value="Frutas">
+                        <label for="decorFrutas"> Decorar cubierta con frutas adicionales</label><br>
+                    </fieldset>
+                    <br>
+                    <br>
+                    <fieldset class="formulario_valida">
+                        <legend>
+                            Valida zona de cobertura
+                        </legend>
+                    </fieldset>
+                    <br>
+                    <br>
+                    <input type="submit" value="Submit">
+                </fieldset>
+            </form>
         </section>
         <section class="menu">
+            <h2>Conoce todo nuestro menú</h2>
+            <i>Tenemos opciones de panadería y pastelería de sal y dulce para toda ocasión.</i>
             <article class="menu_pies">
                 <h2 class="menu_titles">
                     Pies De la Pía
@@ -144,31 +223,31 @@
                                         <th>COP $15.000</th>
                                     </tr>
                                     <tr>
-                                        <th>4 u 8 personas</th>
+                                        <th>Pequeño - 4 u 8 personas</th>
                                         <th>18cm de base</th>
                                         <th>200gr</th>
                                         <th>COP $30.000</th>
                                     </tr>
                                     <tr>
-                                        <th>8 a 10 personas</th>
+                                        <th>Mediano - 4 u 8 personas</th>
                                         <th>22cm de diámetro</th>
                                         <th>300gr</th>
                                         <th>COP $50.000</th>
                                     </tr>
                                     <tr>
-                                        <th>10 a 12 personas</th>
+                                        <th>Grande - 10 a 12 personas</th>
                                         <th>24cm de diámetro</th>
                                         <th>400gr</th>
                                         <th>COP $60.000</th>
                                     </tr>
                                     <tr>
-                                        <th>12 a 14 personas</th>
+                                        <th>Extra grande - 12 a 14 personas</th>
                                         <th>26cm de diámetro</th>
                                         <th>500gr</th>
                                         <th>COP $70.000</th>
                                     </tr>
                                     <tr>
-                                        <th>15 A 20 personas</th>
+                                        <th>Familiar - 15 A 20 personas</th>
                                         <th>28cm de diámetro</th>
                                         <th>600gr</th>
                                         <th>COP $75.000</th>
@@ -206,31 +285,31 @@
                                         <th>COP $15.000</th>
                                     </tr>
                                     <tr>
-                                        <th>4 u 8 personas</th>
+                                        <th>Pequeño - 4 u 8 personas</th>
                                         <th>18cm de base</th>
                                         <th>200gr</th>
                                         <th>COP $30.000</th>
                                     </tr>
                                     <tr>
-                                        <th>8 a 10 personas</th>
+                                        <th>Mediano - 8 a 10 personas</th>
                                         <th>22cm de diámetro</th>
                                         <th>300gr</th>
                                         <th>COP $50.000</th>
                                     </tr>
                                     <tr>
-                                        <th>10 a 12 personas</th>
+                                        <th>Grande - 10 a 12 personas</th>
                                         <th>24cm de diámetro</th>
                                         <th>400gr</th>
                                         <th>COP $60.000</th>
                                     </tr>
                                     <tr>
-                                        <th>12 a 14 personas</th>
+                                        <th>Extra grande - 12 a 14 personas</th>
                                         <th>26cm de diámetro</th>
                                         <th>500gr</th>
                                         <th>COP $70.000</th>
                                     </tr>
                                     <tr>
-                                        <th>15 A 20 personas</th>
+                                        <th>Familiar - 15 A 20 personas</th>
                                         <th>28cm de diámetro</th>
                                         <th>600gr</th>
                                         <th>COP $75.000</th>
@@ -268,31 +347,31 @@
                                         <th>COP $15.000</th>
                                     </tr>
                                     <tr>
-                                        <th>4 u 8 personas</th>
+                                        <th>Pequeño - 4 u 8 personas</th>
                                         <th>18cm de base</th>
                                         <th>200gr</th>
                                         <th>COP $30.000</th>
                                     </tr>
                                     <tr>
-                                        <th>8 a 10 personas</th>
+                                        <th>Mediano - 4 u 8 personas</th>
                                         <th>22cm de diámetro</th>
                                         <th>300gr</th>
                                         <th>COP $50.000</th>
                                     </tr>
                                     <tr>
-                                        <th>10 a 12 personas</th>
+                                        <th>Grande - 10 a 12 personas</th>
                                         <th>24cm de diámetro</th>
                                         <th>400gr</th>
                                         <th>COP $60.000</th>
                                     </tr>
                                     <tr>
-                                        <th>12 a 14 personas</th>
+                                        <th>Extra grande - 12 a 14 personas</th>
                                         <th>26cm de diámetro</th>
                                         <th>500gr</th>
                                         <th>COP $70.000</th>
                                     </tr>
                                     <tr>
-                                        <th>15 A 20 personas</th>
+                                        <th>Familiar - 15 A 20 personas</th>
                                         <th>28cm de diámetro</th>
                                         <th>600gr</th>
                                         <th>COP $75.000</th>
@@ -330,31 +409,31 @@
                                         <th>COP $15.000</th>
                                     </tr>
                                     <tr>
-                                        <th>4 u 8 personas</th>
+                                        <th>Pequeño - 4 u 8 personas</th>
                                         <th>18cm de base</th>
                                         <th>200gr</th>
                                         <th>COP $30.000</th>
                                     </tr>
                                     <tr>
-                                        <th>8 a 10 personas</th>
+                                        <th>Mediano - 4 u 8 personas</th>
                                         <th>22cm de diámetro</th>
                                         <th>300gr</th>
                                         <th>COP $50.000</th>
                                     </tr>
                                     <tr>
-                                        <th>10 a 12 personas</th>
+                                        <th>Grande - 10 a 12 personas</th>
                                         <th>24cm de diámetro</th>
                                         <th>400gr</th>
                                         <th>COP $60.000</th>
                                     </tr>
                                     <tr>
-                                        <th>12 a 14 personas</th>
+                                        <th>Extra grande - 12 a 14 personas</th>
                                         <th>26cm de diámetro</th>
                                         <th>500gr</th>
                                         <th>COP $70.000</th>
                                     </tr>
                                     <tr>
-                                        <th>15 A 20 personas</th>
+                                        <th>Familiar - 15 A 20 personas</th>
                                         <th>28cm de diámetro</th>
                                         <th>600gr</th>
                                         <th>COP $75.000</th>
@@ -392,31 +471,31 @@
                                         <th>COP $15.000</th>
                                     </tr>
                                     <tr>
-                                        <th>4 u 8 personas</th>
+                                        <th>Pequeño - 4 u 8 personas</th>
                                         <th>18cm de base</th>
                                         <th>200gr</th>
                                         <th>COP $30.000</th>
                                     </tr>
                                     <tr>
-                                        <th>8 a 10 personas</th>
+                                        <th>Mediano - 4 u 8 personas</th>
                                         <th>22cm de diámetro</th>
                                         <th>300gr</th>
                                         <th>COP $50.000</th>
                                     </tr>
                                     <tr>
-                                        <th>10 a 12 personas</th>
+                                        <th>Grande - 10 a 12 personas</th>
                                         <th>24cm de diámetro</th>
                                         <th>400gr</th>
                                         <th>COP $60.000</th>
                                     </tr>
                                     <tr>
-                                        <th>12 a 14 personas</th>
+                                        <th>Extra grande - 12 a 14 personas</th>
                                         <th>26cm de diámetro</th>
                                         <th>500gr</th>
                                         <th>COP $70.000</th>
                                     </tr>
                                     <tr>
-                                        <th>15 A 20 personas</th>
+                                        <th>Familiar - 15 A 20 personas</th>
                                         <th>28cm de diámetro</th>
                                         <th>600gr</th>
                                         <th>COP $75.000</th>
@@ -454,31 +533,31 @@
                                         <th>COP $15.000</th>
                                     </tr>
                                     <tr>
-                                        <th>4 u 8 personas</th>
+                                        <th>Pequeño - 4 u 8 personas</th>
                                         <th>18cm de base</th>
                                         <th>200gr</th>
                                         <th>COP $30.000</th>
                                     </tr>
                                     <tr>
-                                        <th>8 a 10 personas</th>
+                                        <th>Mediano - 4 u 8 personas</th>
                                         <th>22cm de diámetro</th>
                                         <th>300gr</th>
                                         <th>COP $50.000</th>
                                     </tr>
                                     <tr>
-                                        <th>10 a 12 personas</th>
+                                        <th>Grande - 10 a 12 personas</th>
                                         <th>24cm de diámetro</th>
                                         <th>400gr</th>
                                         <th>COP $60.000</th>
                                     </tr>
                                     <tr>
-                                        <th>12 a 14 personas</th>
+                                        <th>Extra grande - 12 a 14 personas</th>
                                         <th>26cm de diámetro</th>
                                         <th>500gr</th>
                                         <th>COP $70.000</th>
                                     </tr>
                                     <tr>
-                                        <th>15 A 20 personas</th>
+                                        <th>Familiar - 15 A 20 personas</th>
                                         <th>28cm de diámetro</th>
                                         <th>600gr</th>
                                         <th>COP $75.000</th>
@@ -526,31 +605,31 @@
                                         <th>COP $15.000</th>
                                     </tr>
                                     <tr>
-                                        <th>4 u 8 personas</th>
+                                        <th>Pequeño - 4 u 8 personas</th>
                                         <th>18cm de base</th>
                                         <th>200gr</th>
                                         <th>COP $30.000</th>
                                     </tr>
                                     <tr>
-                                        <th>8 a 10 personas</th>
+                                        <th>Mediano - 4 u 8 personas</th>
                                         <th>22cm de diámetro</th>
                                         <th>300gr</th>
                                         <th>COP $50.000</th>
                                     </tr>
                                     <tr>
-                                        <th>10 a 12 personas</th>
+                                        <th>Grande - 10 a 12 personas</th>
                                         <th>24cm de diámetro</th>
                                         <th>400gr</th>
                                         <th>COP $60.000</th>
                                     </tr>
                                     <tr>
-                                        <th>12 a 14 personas</th>
+                                        <th>Extra grande - 12 a 14 personas</th>
                                         <th>26cm de diámetro</th>
                                         <th>500gr</th>
                                         <th>COP $70.000</th>
                                     </tr>
                                     <tr>
-                                        <th>15 A 20 personas</th>
+                                        <th>Familiar - 15 A 20 personas</th>
                                         <th>28cm de diámetro</th>
                                         <th>600gr</th>
                                         <th>COP $75.000</th>
@@ -588,31 +667,31 @@
                                         <th>COP $15.000</th>
                                     </tr>
                                     <tr>
-                                        <th>4 u 8 personas</th>
+                                        <th>Pequeño - 4 u 8 personas</th>
                                         <th>18cm de base</th>
                                         <th>200gr</th>
                                         <th>COP $30.000</th>
                                     </tr>
                                     <tr>
-                                        <th>8 a 10 personas</th>
+                                        <th>Mediano - 4 u 8 personas</th>
                                         <th>22cm de diámetro</th>
                                         <th>300gr</th>
                                         <th>COP $50.000</th>
                                     </tr>
                                     <tr>
-                                        <th>10 a 12 personas</th>
+                                        <th>Grande - 10 a 12 personas</th>
                                         <th>24cm de diámetro</th>
                                         <th>400gr</th>
                                         <th>COP $60.000</th>
                                     </tr>
                                     <tr>
-                                        <th>12 a 14 personas</th>
+                                        <th>Extra grande - 12 a 14 personas</th>
                                         <th>26cm de diámetro</th>
                                         <th>500gr</th>
                                         <th>COP $70.000</th>
                                     </tr>
                                     <tr>
-                                        <th>15 A 20 personas</th>
+                                        <th>Familiar - 15 A 20 personas</th>
                                         <th>28cm de diámetro</th>
                                         <th>600gr</th>
                                         <th>COP $75.000</th>
@@ -650,31 +729,31 @@
                                         <th>COP $15.000</th>
                                     </tr>
                                     <tr>
-                                        <th>4 u 8 personas</th>
+                                        <th>Pequeño - 4 u 8 personas</th>
                                         <th>18cm de base</th>
                                         <th>200gr</th>
                                         <th>COP $30.000</th>
                                     </tr>
                                     <tr>
-                                        <th>8 a 10 personas</th>
+                                        <th>Mediano - 4 u 8 personas</th>
                                         <th>22cm de diámetro</th>
                                         <th>300gr</th>
                                         <th>COP $50.000</th>
                                     </tr>
                                     <tr>
-                                        <th>10 a 12 personas</th>
+                                        <th>Grande - 10 a 12 personas</th>
                                         <th>24cm de diámetro</th>
                                         <th>400gr</th>
                                         <th>COP $60.000</th>
                                     </tr>
                                     <tr>
-                                        <th>12 a 14 personas</th>
+                                        <th>Extra grande - 12 a 14 personas</th>
                                         <th>26cm de diámetro</th>
                                         <th>500gr</th>
                                         <th>COP $70.000</th>
                                     </tr>
                                     <tr>
-                                        <th>15 A 20 personas</th>
+                                        <th>Familiar - 15 A 20 personas</th>
                                         <th>28cm de diámetro</th>
                                         <th>600gr</th>
                                         <th>COP $75.000</th>
@@ -712,31 +791,31 @@
                                         <th>COP $15.000</th>
                                     </tr>
                                     <tr>
-                                        <th>4 u 8 personas</th>
+                                        <th>Pequeño - 4 u 8 personas</th>
                                         <th>18cm de base</th>
                                         <th>200gr</th>
                                         <th>COP $30.000</th>
                                     </tr>
                                     <tr>
-                                        <th>8 a 10 personas</th>
+                                        <th>Mediano - 4 u 8 personas</th>
                                         <th>22cm de diámetro</th>
                                         <th>300gr</th>
                                         <th>COP $50.000</th>
                                     </tr>
                                     <tr>
-                                        <th>10 a 12 personas</th>
+                                        <th>Grande - 10 a 12 personas</th>
                                         <th>24cm de diámetro</th>
                                         <th>400gr</th>
                                         <th>COP $60.000</th>
                                     </tr>
                                     <tr>
-                                        <th>12 a 14 personas</th>
+                                        <th>Extra grande - 12 a 14 personas</th>
                                         <th>26cm de diámetro</th>
                                         <th>500gr</th>
                                         <th>COP $70.000</th>
                                     </tr>
                                     <tr>
-                                        <th>15 A 20 personas</th>
+                                        <th>Familiar - 15 A 20 personas</th>
                                         <th>28cm de diámetro</th>
                                         <th>600gr</th>
                                         <th>COP $75.000</th>
@@ -774,31 +853,31 @@
                                         <th>COP $15.000</th>
                                     </tr>
                                     <tr>
-                                        <th>4 u 8 personas</th>
+                                        <th>Pequeño - 4 u 8 personas</th>
                                         <th>18cm de base</th>
                                         <th>200gr</th>
                                         <th>COP $30.000</th>
                                     </tr>
                                     <tr>
-                                        <th>8 a 10 personas</th>
+                                        <th>Mediano - 4 u 8 personas</th>
                                         <th>22cm de diámetro</th>
                                         <th>300gr</th>
                                         <th>COP $50.000</th>
                                     </tr>
                                     <tr>
-                                        <th>10 a 12 personas</th>
+                                        <th>Grande - 10 a 12 personas</th>
                                         <th>24cm de diámetro</th>
                                         <th>400gr</th>
                                         <th>COP $60.000</th>
                                     </tr>
                                     <tr>
-                                        <th>12 a 14 personas</th>
+                                        <th>Extra grande - 12 a 14 personas</th>
                                         <th>26cm de diámetro</th>
                                         <th>500gr</th>
                                         <th>COP $70.000</th>
                                     </tr>
                                     <tr>
-                                        <th>15 A 20 personas</th>
+                                        <th>Familiar - 15 A 20 personas</th>
                                         <th>28cm de diámetro</th>
                                         <th>600gr</th>
                                         <th>COP $75.000</th>
@@ -846,31 +925,31 @@
                                         <th>COP $15.000</th>
                                     </tr>
                                     <tr>
-                                        <th>4 u 8 personas</th>
+                                        <th>Pequeño - 4 u 8 personas</th>
                                         <th>18cm de base</th>
                                         <th>200gr</th>
                                         <th>COP $30.000</th>
                                     </tr>
                                     <tr>
-                                        <th>8 a 10 personas</th>
+                                        <th>Mediano - 4 u 8 personas</th>
                                         <th>22cm de diámetro</th>
                                         <th>300gr</th>
                                         <th>COP $50.000</th>
                                     </tr>
                                     <tr>
-                                        <th>10 a 12 personas</th>
+                                        <th>Grande - 10 a 12 personas</th>
                                         <th>24cm de diámetro</th>
                                         <th>400gr</th>
                                         <th>COP $60.000</th>
                                     </tr>
                                     <tr>
-                                        <th>12 a 14 personas</th>
+                                        <th>Extra grande - 12 a 14 personas</th>
                                         <th>26cm de diámetro</th>
                                         <th>500gr</th>
                                         <th>COP $70.000</th>
                                     </tr>
                                     <tr>
-                                        <th>15 A 20 personas</th>
+                                        <th>Familiar - 15 A 20 personas</th>
                                         <th>28cm de diámetro</th>
                                         <th>600gr</th>
                                         <th>COP $75.000</th>
@@ -908,31 +987,31 @@
                                         <th>COP $15.000</th>
                                     </tr>
                                     <tr>
-                                        <th>4 u 8 personas</th>
+                                        <th>Pequeño - 4 u 8 personas</th>
                                         <th>18cm de base</th>
                                         <th>200gr</th>
                                         <th>COP $30.000</th>
                                     </tr>
                                     <tr>
-                                        <th>8 a 10 personas</th>
+                                        <th>Mediano - 4 u 8 personas</th>
                                         <th>22cm de diámetro</th>
                                         <th>300gr</th>
                                         <th>COP $50.000</th>
                                     </tr>
                                     <tr>
-                                        <th>10 a 12 personas</th>
+                                        <th>Grande - 10 a 12 personas</th>
                                         <th>24cm de diámetro</th>
                                         <th>400gr</th>
                                         <th>COP $60.000</th>
                                     </tr>
                                     <tr>
-                                        <th>12 a 14 personas</th>
+                                        <th>Extra grande - 12 a 14 personas</th>
                                         <th>26cm de diámetro</th>
                                         <th>500gr</th>
                                         <th>COP $70.000</th>
                                     </tr>
                                     <tr>
-                                        <th>15 A 20 personas</th>
+                                        <th>Familiar - 15 A 20 personas</th>
                                         <th>28cm de diámetro</th>
                                         <th>600gr</th>
                                         <th>COP $75.000</th>
@@ -980,31 +1059,31 @@
                                         <th>COP $15.000</th>
                                     </tr>
                                     <tr>
-                                        <th>4 u 8 personas</th>
+                                        <th>Pequeño - 4 u 8 personas</th>
                                         <th>18cm de base</th>
                                         <th>200gr</th>
                                         <th>COP $30.000</th>
                                     </tr>
                                     <tr>
-                                        <th>8 a 10 personas</th>
+                                        <th>Mediano - 4 u 8 personas</th>
                                         <th>22cm de diámetro</th>
                                         <th>300gr</th>
                                         <th>COP $50.000</th>
                                     </tr>
                                     <tr>
-                                        <th>10 a 12 personas</th>
+                                        <th>Grande - 10 a 12 personas</th>
                                         <th>24cm de diámetro</th>
                                         <th>400gr</th>
                                         <th>COP $60.000</th>
                                     </tr>
                                     <tr>
-                                        <th>12 a 14 personas</th>
+                                        <th>Extra grande - 12 a 14 personas</th>
                                         <th>26cm de diámetro</th>
                                         <th>500gr</th>
                                         <th>COP $70.000</th>
                                     </tr>
                                     <tr>
-                                        <th>15 A 20 personas</th>
+                                        <th>Familiar - 15 A 20 personas</th>
                                         <th>28cm de diámetro</th>
                                         <th>600gr</th>
                                         <th>COP $75.000</th>
@@ -1042,31 +1121,31 @@
                                         <th>COP $15.000</th>
                                     </tr>
                                     <tr>
-                                        <th>4 u 8 personas</th>
+                                        <th>Pequeño - 4 u 8 personas</th>
                                         <th>18cm de base</th>
                                         <th>200gr</th>
                                         <th>COP $30.000</th>
                                     </tr>
                                     <tr>
-                                        <th>8 a 10 personas</th>
+                                        <th>Mediano - 4 u 8 personas</th>
                                         <th>22cm de diámetro</th>
                                         <th>300gr</th>
                                         <th>COP $50.000</th>
                                     </tr>
                                     <tr>
-                                        <th>10 a 12 personas</th>
+                                        <th>Grande - 10 a 12 personas</th>
                                         <th>24cm de diámetro</th>
                                         <th>400gr</th>
                                         <th>COP $60.000</th>
                                     </tr>
                                     <tr>
-                                        <th>12 a 14 personas</th>
+                                        <th>Extra grande - 12 a 14 personas</th>
                                         <th>26cm de diámetro</th>
                                         <th>500gr</th>
                                         <th>COP $70.000</th>
                                     </tr>
                                     <tr>
-                                        <th>15 A 20 personas</th>
+                                        <th>Familiar - 15 A 20 personas</th>
                                         <th>28cm de diámetro</th>
                                         <th>600gr</th>
                                         <th>COP $75.000</th>

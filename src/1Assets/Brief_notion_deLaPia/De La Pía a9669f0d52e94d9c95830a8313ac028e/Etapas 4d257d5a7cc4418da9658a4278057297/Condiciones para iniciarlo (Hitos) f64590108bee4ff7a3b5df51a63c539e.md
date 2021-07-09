@@ -1,0 +1,1 @@
+# Condiciones para iniciarlo (Hitos)
