@@ -35,9 +35,6 @@ Los tiempos de cargas para la(s) páginas deberán ser apropiados, y dentro de l
 [3.1 Diseño (Colores y fuentes)](De%20La%20Pi%CC%81a%20a9669f0d52e94d9c95830a8313ac028e/3%201%20Disen%CC%83o%20(Colores%20y%20fuentes)%20a7d328ef3b1c4f66968f0827e5a12eb2.md)
 
 # 3.1 Diseño (Colores y fuentes)
-
-![3%201%20Disen%CC%83o%20(Colores%20y%20fuentes)%20a7d328ef3b1c4f66968f0827e5a12eb2/Untitled.png](3%201%20Disen%CC%83o%20(Colores%20y%20fuentes)%20a7d328ef3b1c4f66968f0827e5a12eb2/Untitled.png)
-
 ### Paleta de colores:
 
 - #762011 —- café del texto del logo
@@ -49,9 +46,8 @@ Los tiempos de cargas para la(s) páginas deberán ser apropiados, y dentro de l
 - #5C913B —- hojas piña verde
 
 ### Fuentes:
-
-- TÍTULOS: Aloja extended - fuente del logo, atención: la fuente "Aloja" sola no tiene minúsculas, por eso toca la extended, que se puede descargar desde: [https://fontsfree.net/aloja-extended-font-download.html](https://fontsfree.net/aloja-extended-font-download.html)
-- CONTENIDO: josefin sans regular font - descargable en: [https://fonts.google.com/specimen/Josefin+Sans](https://fonts.google.com/specimen/Josefin+Sans)
+- *TÍTULOS:* Aloja extended - fuente del logo, atención: la fuente "Aloja" sola no tiene minúsculas, por eso toca la extended, que se puede descargar desde: [https://fontsfree.net/aloja-extended-font-download.html](https://fontsfree.net/aloja-extended-font-download.html)
+- *CONTENIDO:* josefin sans regular font - descargable en: [https://fonts.google.com/specimen/Josefin+Sans](https://fonts.google.com/specimen/Josefin+Sans)
 
 **Recursos necesarios:**
 
@@ -98,3 +94,11 @@ Documentación del código y recomendaciones
 
 ## 7. Actualización de componentes existentes y actualización de la página
 - Inicio de HTML con assets: 8 de julio 2021
+
+## 8. Información técnica
+- NVM version: 0.37.2
+- Node version: node v14.17.0 (npm v6.14.13)
+- OS: Windows 10
+- Terminal: WSL 1 (Ubuntu)
+- *Preprocesador:* Sass para CSS3 (v 1.35.2 compiled with dart2js 2.13.4) para compilar usar
+    ``sass --watch src/scss:dist/css/main.css``

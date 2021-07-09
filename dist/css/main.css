@@ -1,0 +1,155 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "Aloha";
+  src: url("/delapia/src/1Assets/fonts/2FuenteALOJA-extended.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Josefin";
+  src: url("/delapia/src/1Assets/fonts/JosefinSans-VariableFont_wght.ttf") format("truetype");
+}
+/* #B98E8C —- cafe corona 1
+#ffac33 —- piña oscuro
+#ffac4d —- piña claro
+#EF3445 —- fresa del logo
+#5C913B —- hojas piña verde */
+.topbar {
+  width: 100%;
+  background-color: #762011;
+  color: white;
+  text-align: center;
+  font-size: 12px;
+  padding: 10px 0;
+}
+.topbar a, .topbar p {
+  color: white;
+}
+
+.logo_header {
+  width: 15%;
+}
+
+.nav {
+  display: none;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-around;
+}
+header h1 {
+  font-size: 22px;
+  text-align: center;
+}
+
+li > img {
+  width: 50%;
+}
+
+footer {
+  background-color: #762011;
+}
+footer .logo_footer {
+  width: 15%;
+}
+footer .contacto {
+  font-size: 12px;
+  border: solid red 3px;
+}
+footer .contacto p {
+  color: white;
+}
+footer .contacto p b {
+  color: white;
+  font-weight: 300;
+}
+footer .contacto p a {
+  color: white;
+}
+footer .social {
+  color: white;
+  font-size: 12px;
+  border: solid blue 3px;
+}
+footer .social_title {
+  font-size: 14px;
+}
+footer .signature {
+  margin: 30px 0 5px 0;
+  font-size: 10px;
+  text-align: center;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126
+License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+  width: 100vw;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Aloha", sans-serif;
+  color: #762011;
+  margin: 20px 0 10px 0;
+}
+
+legend, label, p, a, b, i, th {
+  font-family: "Josefin", sans-serif;
+  color: #000;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=main.css.map */

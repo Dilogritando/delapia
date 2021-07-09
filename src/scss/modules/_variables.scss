@@ -1,0 +1,22 @@
+//Fonts
+@font-face {
+    font-family: 'Aloha';
+    src: url("/delapia/src/1Assets/fonts/2FuenteALOJA-extended.ttf") format("truetype");
+}
+@font-face {
+    font-family: 'Josefin';
+    src: url("/delapia/src/1Assets/fonts/JosefinSans-VariableFont_wght.ttf") format("truetype");
+}
+
+$font-title: 'Aloha', sans-serif;
+$font-body: 'Josefin', sans-serif;
+
+//Colors
+$logoColor: #762011;
+$azul: #5864B7;
+
+/* #B98E8C —- cafe corona 1
+#ffac33 —- piña oscuro
+#ffac4d —- piña claro
+#EF3445 —- fresa del logo
+#5C913B —- hojas piña verde */

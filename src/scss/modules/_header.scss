@@ -1,0 +1,33 @@
+@use 'variables';
+
+.topbar {
+    width: 100%;
+    background-color: variables.$logoColor;
+    color: white;
+    text-align: center;
+    font-size: 12px;
+    padding: 10px 0;
+    a, p {
+        color: white;
+    }
+}
+
+.logo_header{
+    width: 15%;
+}
+
+.nav{
+    display: none;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-around;
+    h1{
+        font-size: 22px;
+        text-align: center;
+    }
+}
