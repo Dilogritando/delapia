@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @font-face {
   font-family: "Aloha";
   src: url("/delapia/src/1Assets/fonts/2FuenteALOJA-extended.ttf") format("truetype");
@@ -7,11 +6,6 @@
   font-family: "Josefin";
   src: url("/delapia/src/1Assets/fonts/JosefinSans-VariableFont_wght.ttf") format("truetype");
 }
-/* #B98E8C —- cafe corona 1
-#ffac33 —- piña oscuro
-#ffac4d —- piña claro
-#EF3445 —- fresa del logo
-#5C913B —- hojas piña verde */
 .topbar {
   width: 100%;
   background-color: #762011;
@@ -24,10 +18,6 @@
   color: white;
 }
 
-.logo_header {
-  width: 15%;
-}
-
 .nav {
   display: none;
 }
@@ -38,28 +28,107 @@ header {
   flex-wrap: nowrap;
   align-items: center;
   justify-content: space-around;
+  border-bottom: 1px solid maroon;
+  height: 85px;
+}
+header .logo_header {
+  height: 80px;
 }
 header h1 {
   font-size: 22px;
   text-align: center;
 }
+header button {
+  border-radius: 15px;
+  width: 66px;
+  height: 45px;
+  border-width: 1px;
+  border-color: maroon;
+  background-color: beige;
+  font-family: "Josefin";
+}
 
-li > img {
+ul button {
+  color: #5864B7;
+  border-radius: 15px;
+  border: 1px solid;
+  margin: 5px;
+}
+
+.product_buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+li img {
   width: 50%;
+}
+li h4 {
+  font-size: 14px;
+  color: #e4624b;
+}
+
+h3 {
+  font-size: 12px;
+}
+
+h5 {
+  text-align: center;
+}
+
+p {
+  line-height: 1.3;
+  font-size: 12px;
+}
+
+table, th, td {
+  border-collapse: collapse;
+  border: 1px solid #762011;
+}
+
+thead th {
+  background-color: #762011;
+  text-align: center;
+}
+
+th {
+  font-size: 12px;
+  font-weight: unset;
+  padding: 10px;
+}
+
+.menu_pies_opciones li, .menu_ponques_opciones li, .menu_galletas_opciones li, .menu_quiches_opciones li {
+  border: 1px solid #B98E8C;
+  border-radius: 15px;
+  margin: 5px;
+  padding: 5px;
+}
+
+.domicilios {
+  text-align: center;
+}
+.domicilios iframe {
+  width: 95vw;
 }
 
 footer {
+  margin: 45px 0 0 0;
   background-color: #762011;
 }
 footer .logo_footer {
-  width: 15%;
+  width: 90px;
+  margin: 5px;
+  display: inline-block;
 }
 footer .contacto {
   font-size: 12px;
-  border: solid red 3px;
+  display: flex;
+  text-align: center;
 }
 footer .contacto p {
   color: white;
+  margin: 10px 0;
 }
 footer .contacto p b {
   color: white;
@@ -68,36 +137,49 @@ footer .contacto p b {
 footer .contacto p a {
   color: white;
 }
+footer .contacto_datos {
+  padding: 15px;
+}
 footer .social {
-  color: white;
   font-size: 12px;
-  border: solid blue 3px;
+  padding: 10px;
 }
 footer .social_title {
   font-size: 14px;
+  color: white;
+  margin: 10px 0;
+}
+footer .social ul {
+  display: flex;
+  justify-content: space-around;
+}
+footer .social ul a {
+  color: white;
+  margin: 0 5px;
 }
 footer .signature {
-  margin: 30px 0 5px 0;
+  padding: 30px 0 5px 0;
   font-size: 10px;
   text-align: center;
+  color: white;
+}
+footer .signature b {
+  color: white;
 }
 
 /* http://meyerweb.com/eric/tools/css/reset/
-v2.0 | 20110126
-License: none (public domain)
-*/
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+v2.0 | 20110126 - License: none (public domain)*/
+html, body, div, span, applet, object, iframe, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
 b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
+table, caption, tbody, tfoot,
 article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
+figure, figcaption, header, hgroup,
+menu, nav, output, ruby, summary,
 time, mark, audio, video {
   margin: 0;
   padding: 0;
@@ -109,13 +191,23 @@ time, mark, audio, video {
 
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+footer, hgroup, menu, nav, section {
   display: block;
 }
 
 body {
   line-height: 1;
   width: 100vw;
+}
+
+section {
+  margin: 20px 0;
+  padding: 10px 5px;
+  border-bottom: 1px solid maroon;
+}
+
+article {
+  margin: 10px 0;
 }
 
 ol, ul {
@@ -132,20 +224,17 @@ q:before, q:after {
   content: none;
 }
 
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
 h1, h2, h3, h4, h5, h6 {
   font-family: "Aloha", sans-serif;
   color: #762011;
   margin: 20px 0 10px 0;
+  border: 0;
 }
 
 legend, label, p, a, b, i, th {
   font-family: "Josefin", sans-serif;
   color: #000;
+  line-height: 1.3;
 }
 
 a {

@@ -12,9 +12,7 @@
     }
 }
 
-.logo_header{
-    width: 15%;
-}
+
 
 .nav{
     display: none;
@@ -26,8 +24,22 @@ header{
     flex-wrap: nowrap;
     align-items: center;
     justify-content: space-around;
+    border-bottom: 1px solid maroon;
+    height: 85px;
+    .logo_header{
+        height: 80px;
+    }
     h1{
         font-size: 22px;
         text-align: center;
+    }
+    button{
+        border-radius: 15px;
+        width: 66px;
+        height: 45px;
+        border-width: 1px;
+        border-color: maroon;
+        background-color: beige;
+        font-family: 'Josefin';
     }
 }

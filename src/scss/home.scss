@@ -9,24 +9,19 @@
 @use 'modules/footer';
 
 //Reset
-
 /* http://meyerweb.com/eric/tools/css/reset/
-v2.0 | 20110126
-License: none (public domain)
-*/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+v2.0 | 20110126 - License: none (public domain)*/
+html, body, div, span, applet, object, iframe, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
 b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
+table, caption, tbody, tfoot,
 article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
+figure, figcaption, header, hgroup,
+menu, nav, output, ruby, summary,
 time, mark, audio, video {
  margin: 0;
  padding: 0;
@@ -37,12 +32,20 @@ time, mark, audio, video {
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+footer, hgroup, menu, nav, section {
  display: block;
 }
 body {
  line-height: 1;
  width: 100vw;
+}
+section{
+    margin: 20px 0;
+    padding: 10px 5px;
+    border-bottom: 1px solid maroon;
+}
+article{
+    margin: 10px 0;
 }
 ol, ul {
  list-style: none;
@@ -55,20 +58,18 @@ q:before, q:after {
  content: '';
  content: none;
 }
-table {
- border-collapse: collapse;
- border-spacing: 0;
-}
 
 h1, h2, h3, h4, h5, h6 {
  font-family: variables.$font-title;
  color: variables.$logoColor;
  margin: 20px 0 10px 0;
+ border: 0;
 }
 
 legend, label, p, a, b, i, th {
     font-family: variables.$font-body;
     color: #000;
+    line-height: 1.3;
 }
 
 a {
