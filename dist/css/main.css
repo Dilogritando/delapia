@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "Aloha";
   src: url("/delapia/src/1Assets/fonts/2FuenteALOJA-extended.ttf") format("truetype");
@@ -6,6 +7,11 @@
   font-family: "Josefin";
   src: url("/delapia/src/1Assets/fonts/JosefinSans-VariableFont_wght.ttf") format("truetype");
 }
+/*
+#ffac33 —- piña oscuro
+#ffac4d —- piña claro
+#EF3445 —- fresa del logo
+#5C913B —- hojas piña verde */
 .topbar {
   width: 100%;
   background-color: #762011;
@@ -16,6 +22,7 @@
 }
 .topbar a, .topbar p {
   color: white;
+  margin: 0;
 }
 
 .nav {
@@ -48,6 +55,113 @@ header button {
   font-family: "Josefin";
 }
 
+.formulario {
+  border: 1px solid maroon;
+  border-radius: 30px;
+  padding: 10px;
+  margin: 5px;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  background: url("/delapia/src/1Assets/6ImagenesProducto/limon2.jpeg");
+}
+.formulario_tipo {
+  display: flex;
+  flex-direction: column;
+}
+.formulario_tipo input {
+  align-self: center;
+}
+.formulario_valida {
+  text-align: center;
+}
+.formulario_valida-title {
+  color: #762011;
+  text-align: center;
+  cursor: pointer;
+  font-size: 26px;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px white;
+}
+.formulario_valida-title:hover {
+  text-decoration: underline;
+  font-size: 18px;
+}
+.formulario #formulario_mapa {
+  display: none;
+}
+
+.menu {
+  margin: 0 10px;
+}
+.menu h2 {
+  text-align: center;
+}
+.menu .menu_pies_opciones li, .menu .menu_ponques_opciones li, .menu .menu_galletas_opciones li, .menu .menu_quiches_opciones li {
+  border: 1px solid #b98f8d;
+  border-radius: 15px;
+  margin: 5px;
+  padding: 5px;
+}
+.menu .menu_pies_opciones li img, .menu .menu_ponques_opciones li img, .menu .menu_galletas_opciones li img, .menu .menu_quiches_opciones li img {
+  width: 50%;
+  border-radius: 150px;
+  margin: 0 0 0 25%;
+}
+.menu .menu_pies_opciones li h4, .menu .menu_ponques_opciones li h4, .menu .menu_galletas_opciones li h4, .menu .menu_quiches_opciones li h4 {
+  font-size: 14px;
+  color: #e4624b;
+}
+.menu li img {
+  width: 50%;
+  border-radius: 150px;
+  margin: 0 0 0 25%;
+}
+.menu li h4 {
+  font-size: 14px;
+  color: #e4624b;
+}
+.menu table, .menu th, .menu td {
+  border-collapse: collapse;
+  border: 1px solid #762011;
+}
+.menu thead th {
+  background-color: #762011;
+  text-align: center;
+}
+.menu th {
+  font-size: 12px;
+  font-weight: unset;
+  padding: 10px;
+}
+.menu_intro {
+  margin: 0 0 55px 0;
+}
+.menu .precios {
+  cursor: pointer;
+}
+.menu .precios:hover {
+  color: #5864B7;
+  text-decoration: underline;
+}
+.menu .porciones_precios {
+  display: none;
+}
+.menu_pies {
+  background-color: #ffac335e;
+}
+.menu_ponques {
+  background-color: #b98e8c47;
+}
+.menu_galletas {
+  background-color: #d9ef638c;
+}
+.menu_quiches {
+  background-color: #5c913b5c;
+}
+
 ul button {
   color: #5864B7;
   border-radius: 15px;
@@ -59,14 +173,6 @@ ul button {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-li img {
-  width: 50%;
-}
-li h4 {
-  font-size: 14px;
-  color: #e4624b;
 }
 
 h3 {
@@ -82,34 +188,12 @@ p {
   font-size: 12px;
 }
 
-table, th, td {
-  border-collapse: collapse;
-  border: 1px solid #762011;
-}
-
-thead th {
-  background-color: #762011;
-  text-align: center;
-}
-
-th {
-  font-size: 12px;
-  font-weight: unset;
-  padding: 10px;
-}
-
-.menu_pies_opciones li, .menu_ponques_opciones li, .menu_galletas_opciones li, .menu_quiches_opciones li {
-  border: 1px solid #B98E8C;
-  border-radius: 15px;
-  margin: 5px;
-  padding: 5px;
-}
-
 .domicilios {
   text-align: center;
 }
-.domicilios iframe {
-  width: 95vw;
+
+iframe {
+  width: 90vw;
 }
 
 footer {
@@ -173,11 +257,10 @@ html, body, div, span, applet, object, iframe, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
+b, u, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
-table, caption, tbody, tfoot,
-article, aside, canvas, details, embed,
+table, caption, tbody, tfoot, aside, canvas, details, embed,
 figure, figcaption, header, hgroup,
 menu, nav, output, ruby, summary,
 time, mark, audio, video {
@@ -208,6 +291,8 @@ section {
 
 article {
   margin: 10px 0;
+  padding: 10px 5px;
+  border-radius: 10px;
 }
 
 ol, ul {

@@ -9,15 +9,12 @@
     padding: 10px 0;
     a, p {
         color: white;
+        margin: 0;
     }
 }
-
-
-
 .nav{
     display: none;
 }
-
 header{
     display: flex;
     flex-direction: row;
@@ -42,4 +39,10 @@ header{
         background-color: beige;
         font-family: 'Josefin';
     }
+}
+.formulario{
+    border: 1px solid maroon;
+    border-radius: 30px;
+    padding: 10px;
+    margin: 5px;
 }

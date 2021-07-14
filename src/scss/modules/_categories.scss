@@ -1,26 +1,118 @@
 @use 'variables';
 
+.formulario{
+    display: flex;
+    flex-direction: column;
+    background: url("/delapia/src/1Assets/6ImagenesProducto/limon2.jpeg");
+    &_tipo{
+        display: flex;
+        flex-direction: column;
+        input{
+            align-self: center;
+        }
+    }
+    &_valida{
+        text-align: center;
+        &-title{
+            color: variables.$logoColor;
+            text-align: center;
+            cursor: pointer;
+            font-size: 26px;
+            font-weight: bold;
+            text-shadow: 1px 1px 2px white;
+            &:hover{
+                text-decoration: underline;
+                font-size: 18px;
+            }
+        }
+    }
+    #formulario_mapa{
+        display: none;
+    }
+}
+.menu{
+    margin: 0 10px;
+    h2{
+        text-align: center;
+    }
+    .menu_pies_opciones, .menu_ponques_opciones, .menu_galletas_opciones, .menu_quiches_opciones{
+        li {
+          border: 1px solid variables.$corona;
+          border-radius: 15px;
+          margin: 5px;
+          padding: 5px;
+          img {
+            width: 50%;
+            border-radius: 150px;
+            margin: 0 0 0 25%;
+            }
+            h4{
+                font-size: 14px;
+                color: #e4624b;
+            }
+        }
+    }
+    li {
+        img {
+            width: 50%;
+            border-radius: 150px;
+            margin: 0 0 0 25%;
+        }
+        h4{
+            font-size: 14px;
+            color: #e4624b;
+        }
+    }
+    table, th, td {
+        border-collapse: collapse;
+        border: 1px solid variables.$logoColor;
+    }
+    thead th{
+        background-color: variables.$logoColor;
+        text-align: center;
+    }
+    th{
+        font-size: 12px;
+        font-weight: unset;
+        padding: 10px;
+    }
+    &_intro{
+       margin: 0 0 55px 0;
+    }
+    .precios{
+        cursor: pointer;
+        &:hover{
+            color: variables.$azul;
+            text-decoration: underline;
+        }
+    }
+    .porciones_precios{
+        display: none;
+    }
+    &_pies{
+        background-color: #ffac335e;
+    }
+    &_ponques{
+        background-color: #b98e8c47;
+    }
+    &_galletas{
+        background-color: #d9ef638c;
+    }
+    &_quiches{
+        background-color: #5c913b5c;
+    }
+}
+
 ul button {
     color: variables.$azul;
     border-radius: 15px;
     border: 1px solid;
     margin: 5px;
 }
-
 .product_buttons{
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-li {
-    img {
-        width: 50%;
-    }
-    h4{
-        font-size: 14px;
-        color: #e4624b;
-    }
 }
 h3{
     font-size: 12px;
@@ -33,33 +125,9 @@ p{
     line-height: 1.3;
     font-size: 12px;
 }
-table, th, td {
-    border-collapse: collapse;
-    border: 1px solid variables.$logoColor;
-}
-thead th{
-    background-color: variables.$logoColor;
-    text-align: center;
-}
-th{
-    font-size: 12px;
-    font-weight: unset;
-    padding: 10px;
-}
-
-.menu_pies_opciones, .menu_ponques_opciones, .menu_galletas_opciones, .menu_quiches_opciones{
-  li {
-    border: 1px solid variables.$corona;
-    border-radius: 15px;
-    margin: 5px;
-    padding: 5px;
-  }
-}
-
-
 .domicilios{
     text-align: center;
-    iframe {
-        width: 95vw;
-    }
+}
+iframe {
+    width: 90vw;
 }
