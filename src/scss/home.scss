@@ -20,7 +20,7 @@ dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, aside, canvas, details, embed,
 figure, figcaption, header, hgroup,
-menu, nav, output, ruby, summary,
+menu, output, ruby, summary,
 time, mark, audio, video {
  margin: 0;
  padding: 0;
@@ -31,7 +31,7 @@ time, mark, audio, video {
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
-footer, hgroup, menu, nav, section {
+footer, hgroup, menu, section {
  display: block;
 }
 body {

@@ -1,17 +1,11 @@
-@charset "UTF-8";
 @font-face {
   font-family: "Aloha";
-  src: url("/delapia/src/1Assets/fonts/2FuenteALOJA-extended.ttf") format("truetype");
+  src: url("/src/1Assets/fonts/2FuenteALOJA-extended.ttf") format("truetype");
 }
 @font-face {
   font-family: "Josefin";
-  src: url("/delapia/src/1Assets/fonts/JosefinSans-VariableFont_wght.ttf") format("truetype");
+  src: url("/src/1Assets/fonts/JosefinSans-VariableFont_wght.ttf") format("truetype");
 }
-/*
-#ffac33 —- piña oscuro
-#ffac4d —- piña claro
-#EF3445 —- fresa del logo
-#5C913B —- hojas piña verde */
 .topbar {
   width: 100%;
   background-color: #762011;
@@ -19,14 +13,20 @@
   text-align: center;
   font-size: 12px;
   padding: 10px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  position: sticky;
+  top: 0;
+}
+.topbar span {
+  line-height: 0.3;
+  padding: 0 0 0 32px;
 }
 .topbar a, .topbar p {
   color: white;
   margin: 0;
-}
-
-.nav {
-  display: none;
 }
 
 header {
@@ -62,10 +62,50 @@ header button {
   margin: 5px;
 }
 
+.fa-bars {
+  color: white;
+  font-size: 30px;
+}
+
+.nav {
+  height: 455px;
+  position: absolute;
+  right: 2px;
+  top: 53px;
+  display: none;
+  /* display: flex; */
+  overflow: scroll;
+  border: solid 1px #762011;
+  background-color: #f6d8db;
+  z-index: 2;
+  line-height: 2;
+  padding: 10px;
+}
+.nav ul {
+  display: flex;
+  flex-direction: column;
+}
+.nav a:hover {
+  text-decoration: underline;
+  color: #762011;
+  background-color: darksalmon;
+}
+.nav_options_categories {
+  text-align: center;
+}
+.nav_options_categories .nav_subcategories_item {
+  text-align: left;
+}
+.nav_options_last {
+  text-align: center;
+  font-weight: bold;
+  margin: 5px;
+}
+
 .formulario {
   display: flex;
   flex-direction: column;
-  background: url("/delapia/src/1Assets/6ImagenesProducto/limon2.jpeg");
+  background: url("/src/1Assets/6ImagenesProducto/limon2.jpeg");
 }
 .formulario_tipo {
   display: flex;
@@ -168,6 +208,9 @@ ul button {
   border: 1px solid;
   margin: 5px;
 }
+ul button:hover {
+  color: darksalmon;
+}
 
 .product_buttons {
   display: flex;
@@ -194,6 +237,27 @@ p {
 
 iframe {
   width: 90vw;
+}
+
+.modalCheckout_background {
+  display: none;
+  background-color: #4f2f2fd1;
+  padding: 30px;
+  position: absolute;
+  top: 140px;
+  height: 300vh;
+}
+.modalCheckout_proper {
+  background-color: darksalmon;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+}
+.modalCheckout_proper i {
+  align-self: flex-end;
 }
 
 footer {
@@ -237,12 +301,16 @@ footer .social ul {
   display: flex;
   justify-content: space-around;
 }
+footer .social ul i {
+  color: white;
+  font-size: 14px;
+}
 footer .social ul a {
   color: white;
   margin: 0 5px;
 }
 footer .signature {
-  padding: 30px 0 5px 0;
+  padding: 30px 0 0 0;
   font-size: 10px;
   text-align: center;
   color: white;
@@ -262,7 +330,7 @@ dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, aside, canvas, details, embed,
 figure, figcaption, header, hgroup,
-menu, nav, output, ruby, summary,
+menu, output, ruby, summary,
 time, mark, audio, video {
   margin: 0;
   padding: 0;
@@ -274,7 +342,7 @@ time, mark, audio, video {
 
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
-footer, hgroup, menu, nav, section {
+footer, hgroup, menu, section {
   display: block;
 }
 

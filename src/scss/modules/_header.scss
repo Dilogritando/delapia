@@ -7,13 +7,20 @@
     text-align: center;
     font-size: 12px;
     padding: 10px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    span{
+        line-height: 0.3;
+        padding: 0 0 0 32px;
+    }
     a, p {
         color: white;
         margin: 0;
     }
-}
-.nav{
-    display: none;
 }
 header{
     display: flex;

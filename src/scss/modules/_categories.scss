@@ -1,35 +1,5 @@
 @use 'variables';
 
-.formulario{
-    display: flex;
-    flex-direction: column;
-    background: url("/delapia/src/1Assets/6ImagenesProducto/limon2.jpeg");
-    &_tipo{
-        display: flex;
-        flex-direction: column;
-        input{
-            align-self: center;
-        }
-    }
-    &_valida{
-        text-align: center;
-        &-title{
-            color: variables.$logoColor;
-            text-align: center;
-            cursor: pointer;
-            font-size: 26px;
-            font-weight: bold;
-            text-shadow: 1px 1px 2px white;
-            &:hover{
-                text-decoration: underline;
-                font-size: 18px;
-            }
-        }
-    }
-    #formulario_mapa{
-        display: none;
-    }
-}
 .menu{
     margin: 0 10px;
     h2{
@@ -108,6 +78,9 @@ ul button {
     border-radius: 15px;
     border: 1px solid;
     margin: 5px;
+    &:hover{
+        color: darksalmon;
+    }
 }
 .product_buttons{
     display: flex;

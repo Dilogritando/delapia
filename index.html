@@ -4,23 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="/delapia/dist/css/main.css">
+    <link rel="stylesheet" type="text/css" href="/dist/css/main.css">
     <title>Postres De la Pía</title>
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-<link rel="icon" href="/delapia/src/1Assets/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/src/1Assets/favicon.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/7881ea83a4.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="topbar"> <p>Pedidos y domicilios en Bogotá, Colombia: </p><a href="tel:+573107910978">
-        +57 310 7910978</a></div>
+    <div class="topbar">
+        <span>
+            <p>Pedidos y domicilios en Bogotá, Colombia: </p> <br>
+            <a href="tel:+573107910978">
+            +57 310 7910978</a>
+        </span>
+        <i class="fas fa-bars"></i>
+    </div>
     <header>
-        <img class="logo_header" src="/delapia/src/1Assets/1LogoPia.png" alt="Logo De la Pía">
+        <img class="logo_header" src="/src/1Assets/1LogoPia.png" alt="Logo De la Pía">
         <h1>Postres <br> De la Pía</h1>
         <button>
             ¡Haz tu pedido!
         </button>
         <nav class="nav">
             <ul class="nav_options">
-                <li class="nav_options_categories">De sal
+                <li class="nav_options_categories">
+                    <h2>De sal</h2>
                     <ul class="nav_subcategories">
                         <li class="nav_subcategories_item">
                             <a href="">Quiche de acelga</a>
@@ -30,9 +38,11 @@
                         </li>
                     </ul>
                 </li>
-                <li class="nav_options_categories">De dulce
+                <li class="nav_options_categories">
+                    <h2>De dulce</h2>
                     <ul class="nav_subcategories">
-                        <li class="nav_subcategories_item">Ponqués
+                        <li class="nav_subcategories_item">
+                            <h3>Ponqués</h3>
                             <ul class="nav_ponques">
                                 <li class="ponques_item">
                                     <a href="">Ponqué de chocolate</a>
@@ -50,7 +60,8 @@
                                 </li>
                             </ul>
                         </li>
-                        <li class="nav_subcategories_item">Pies
+                        <li class="nav_subcategories_item">
+                            <h3>Pies</h3>
                             <ul class="nav_pies">
                                 <li class="pies_item">
                                     <a href="">Pie de limón</a>
@@ -72,7 +83,8 @@
                                 </li>
                             </ul>
                         </li>
-                        <li class="nav_subcategories_item">Galletas
+                        <li class="nav_subcategories_item">
+                            <h3>Gal letas</h3>
                             <ul class="nav_galletas">
                                 <li class="galletas_item">
                                     <a href="">Alfajores de arequipe y coco</a>
@@ -84,13 +96,13 @@
                         </li>
                     </ul>
                 </li>
-                <li class="nav_options_categories">
+                <li class="nav_options_last">
                     <a href="http://">Zona de cobertura</a>
                 </li>
-                <li class="nav_options_categories">
+                <li class="nav_options_last">
                     <a href="http://">Sobre la chef pastelera</a>
                 </li>
-                <li class="nav_options_categories">
+                <li class="nav_options_last">
                     <a href="http://">Preguntas frecuentes</a>
                 </li>
             </ul>
@@ -179,6 +191,17 @@
                     </fieldset>
                     <br>
                     <br>
+                    <fieldset class="formulario_programar">
+                        <legend>
+                            CUARTO: <br> ¿Cuándo lo quieres?
+                        </legend>
+                        <input type="radio" id="formulario_programar_ya" name="formulario_programar_ya" value="Ya">
+                        <label for="formulario_programar_ya"> ¡Tan pronto sea posible!</label><br>
+                        <input type="radio" id="formulario_programar_despues" name="formulario_programar_despues" value="Después">
+                        <label for="formulario_programar_despues">Seleccionar fecha </label><br>
+                    </fieldset>
+                    <br>
+                    <br>
                     <fieldset class="formulario_valida">
                         <legend>
                             <p class="formulario_valida-title">
@@ -206,7 +229,7 @@
                 <ul class="menu_pies_opciones">
                     <li class="menu_pies_opciones_item">
                         <h3>Pie de limón</h3>
-                        <img src="/delapia/src/1Assets/6ImagenesProducto/4Limon.jpg" alt="Fotografía de pie de limón De la Pía">
+                        <img src="/src/1Assets/6ImagenesProducto/4Limon.jpg" alt="Fotografía de pie de limón De la Pía">
                         <p class="producto_descripcion">
                             Pie hecho con amor, receta perfeccionada desde hace 20 años.
                         </p>
@@ -270,7 +293,7 @@
                     </li>
                     <li class="menu_pies_opciones_item">
                         <h3>Pie de guanábana</h3>
-                        <img src="/delapia/src/1Assets/6ImagenesProducto/3Guanabana.jpg" alt="Fotografía de pie de guanábana De la Pía">
+                        <img src="/src/1Assets/6ImagenesProducto/3Guanabana.jpg" alt="Fotografía de pie de guanábana De la Pía">
                         <p class="producto_descripcion">
                             Pie hecho con amor, receta perfeccionada desde hace 20 años.
                         </p>
@@ -334,7 +357,7 @@
                     </li>
                     <li class="menu_pies_opciones_item">
                         <h3>Pie de fresa</h3>
-                        <img src="/delapia/src/1Assets/6ImagenesProducto/5Fresas.jpg" alt="Fotografía de pie de fresa De la Pía">
+                        <img src="/src/1Assets/6ImagenesProducto/5Fresas.jpg" alt="Fotografía de pie de fresa De la Pía">
                         <p class="producto_descripcion">
                             Pie hecho con amor, receta perfeccionada desde hace 20 años.
                         </p>
@@ -398,7 +421,7 @@
                     </li>
                     <li class="menu_pies_opciones_item">
                         <h3>Pie de mango</h3>
-                        <img src="/delapia/src/1Assets/6ImagenesProducto/Mango.PNG" alt="Fotografía de pie de mango De la Pía">
+                        <img src="/src/1Assets/6ImagenesProducto/Mango.PNG" alt="Fotografía de pie de mango De la Pía">
                         <p class="producto_descripcion">
                             Pie hecho con amor, receta perfeccionada desde hace 20 años.
                         </p>
@@ -462,7 +485,7 @@
                     </li>
                     <li class="menu_pies_opciones_item">
                         <h3>Pie de frutas frescas</h3>
-                        <img src="/delapia/src/1Assets/6ImagenesProducto/CambiarFrutas.jpeg" alt="Fotografía de pie de frutas frescas De la Pía">
+                        <img src="/src/1Assets/6ImagenesProducto/CambiarFrutas.jpeg" alt="Fotografía de pie de frutas frescas De la Pía">
                         <p class="producto_descripcion">
                             Pie hecho con amor, receta perfeccionada desde hace 20 años.
                         </p>
@@ -526,7 +549,7 @@
                     </li>
                     <li class="menu_pies_opciones_item">
                         <h3>Pies personalizados</h3>
-                        <img src="/delapia/src/1Assets/6ImagenesProducto/Crea.png" alt="Ilustración de construye tu propio pie">
+                        <img src="/src/1Assets/6ImagenesProducto/Crea.png" alt="Ilustración de construye tu propio pie">
                         <p class="producto_descripcion">
                             Pie hecho con amor, receta perfeccionada desde hace 20 años.
                         </p>
@@ -600,7 +623,7 @@
                 <ul class="menu_ponques_opciones">
                     <li class="menu_ponques_opciones_item">
                         <h3>Ponqué de chocolate</h3>
-                        <img src="/delapia/src/1Assets/6ImagenesProducto/1ChocolateFlores.jpg" alt="Fotografía de ponqué de chocolate De la Pía">
+                        <img src="/src/1Assets/6ImagenesProducto/1ChocolateFlores.jpg" alt="Fotografía de ponqué de chocolate De la Pía">
                         <p class="producto_descripcion">
                             Ponqué, también llamado por algunos torta o pastel.
                         </p>
@@ -664,7 +687,7 @@
                     </li>
                     <li class="menu_ponques_opciones_item">
                         <h3>Ponqué de piña con ciruelas</h3>
-                        <img src="/delapia/src/1Assets/6ImagenesProducto/7Piña.jpg" alt="Fotografía de ponqué rodeado de tajadas de piña con ciruelas en el centro De la Pía">
+                        <img src="/src/1Assets/6ImagenesProducto/7Piña.jpg" alt="Fotografía de ponqué rodeado de tajadas de piña con ciruelas en el centro De la Pía">
                         <p class="producto_descripcion">
                             Ponqué, también llamado por algunos torta o pastel.
                         </p>
@@ -728,7 +751,7 @@
                     </li>
                     <li class="menu_ponques_opciones_item">
                         <h3>Ponqué de limón con amapola</h3>
-                        <img src="/delapia/src/1Assets/6ImagenesProducto/CambiarPonquelimon.jpg" alt="Fotografía de ponqué de limón De la Pía">
+                        <img src="/src/1Assets/6ImagenesProducto/CambiarPonquelimon.jpg" alt="Fotografía de ponqué de limón De la Pía">
                         <p class="producto_descripcion">
                             Ponqué, también llamado por algunos torta o pastel.
                         </p>
@@ -792,7 +815,7 @@
                     </li>
                     <li class="menu_ponques_opciones_item">
                         <h3>Ponqué de la Abuela</h3>
-                        <img src="/delapia/src/1Assets/6ImagenesProducto/5Fresas.jpg" alt="Fotografía de ponqué de la abuela De la Pía">
+                        <img src="/src/1Assets/6ImagenesProducto/5Fresas.jpg" alt="Fotografía de ponqué de la abuela De la Pía">
                         <p class="producto_descripcion">
                             Ponqué, también llamado por algunos torta o pastel.
                         </p>
@@ -856,7 +879,7 @@
                     </li>
                     <li class="menu_ponques_opciones_item">
                         <h3>Ponqués personalizados</h3>
-                        <img src="/delapia/src/1Assets/6ImagenesProducto/Crea.png" alt="Ilustración invitando a escoger tu ponqué">
+                        <img src="/src/1Assets/6ImagenesProducto/Crea.png" alt="Ilustración invitando a escoger tu ponqué">
                         <p class="producto_descripcion">
                             Ponqué, también llamado por algunos torta o pastel.
                         </p>
@@ -930,7 +953,7 @@
                 <ul class="menu_galletas_opciones">
                     <li class="menu_galletas_opciones_item">
                         <h3>Alfajores de arequipe y coco</h3>
-                        <img src="/delapia/src/1Assets/6ImagenesProducto/8Alfajores.jpg" alt="Fotografía de alfajores De la Pía">
+                        <img src="/src/1Assets/6ImagenesProducto/8Alfajores.jpg" alt="Fotografía de alfajores De la Pía">
                         <p class="producto_descripcion">
                             Tradicionales alfajores con arequipe (dulce de leche) con ralladura de coco.
                         </p>
@@ -994,7 +1017,7 @@
                     </li>
                     <li class="menu_galletas_opciones_item">
                         <h3>Galletas de chocolate</h3>
-                        <img src="/delapia/src/1Assets/6ImagenesProducto/Alfajores3.jpeg" alt="Fotografía de galletas de chocolate De la Pía">
+                        <img src="/src/1Assets/6ImagenesProducto/Alfajores3.jpeg" alt="Fotografía de galletas de chocolate De la Pía">
                         <p class="producto_descripcion">
                             Galletas de chocolate.
                         </p>
@@ -1068,7 +1091,7 @@
                 <ul class="menu_quiches_opciones">
                     <li class="menu_quiches_opciones_item">
                         <h3>Quiche de espinaca</h3>
-                        <img src="/delapia/src/1Assets/6ImagenesProducto/Quiche2.jpeg" alt="Fotografía de quiche de espinaca De la Pía">
+                        <img src="/src/1Assets/6ImagenesProducto/Quiche2.jpeg" alt="Fotografía de quiche de espinaca De la Pía">
                         <p class="producto_descripcion">
                             Quiche o miniquiche de 6 porciones en adelante, contiene queso.
                         </p>
@@ -1132,7 +1155,7 @@
                     </li>
                     <li class="menu_quiches_opciones_item">
                         <h3>Quiche de acelga</h3>
-                        <img src="/delapia/src/1Assets/6ImagenesProducto/Quiche3.jpeg" alt="Fotografía de quiche de acelga De la Pía">
+                        <img src="/src/1Assets/6ImagenesProducto/Quiche3.jpeg" alt="Fotografía de quiche de acelga De la Pía">
                         <p class="producto_descripcion">
                             Quiche o miniquiche de 6 porciones en adelante, contiene queso.
                         </p>
@@ -1219,7 +1242,7 @@
         </section>
         <footer>
             <div class="contacto">
-                <img class="logo_footer" src="/delapia/src/1Assets/1LogoPia.png" alt="Logo De la Pía">
+                <img class="logo_footer" src="/src/1Assets/1LogoPia.png" alt="Logo De la Pía">
                 <div class="contacto_datos">
                     <p><b>Teléfono-Whatsapp: </b> <a href="tel:+573107910978">310 7910978</a></p>
                     <p><b>Ubicación: </b>Bogotá, Colombia</p>
@@ -1232,20 +1255,68 @@
                     Búscanos en redes sociales:
                 </p>
                 <ul>
-                    <li> <a href="https://www.facebook.com/DelaPiaPostres">
-                        Facebook</a>
+                    <li>
+                        <i class="fab fa-facebook"></i>
+                        <a href="https://www.facebook.com/DelaPiaPostres">
+                        Facebook
+                        </a>
                     </li>
-                    <li> <a href="https://www.instagram.com/delapiapostres/">
-                        Instagram</a>
+                    <li>
+                        <i class="fab fa-instagram"></i>
+                        <a href="https://www.instagram.com/delapiapostres/">
+                        Instagram
+                        </a>
                     </li>
-                    <li> <a href="tel:+573107910978">
-                        Whatsapp</a>
+                    <li>
+                        <i class="fab fa-whatsapp"></i>
+                        <a href="tel:+573107910978">
+                        Whatsapp
+                    </a>
                     </li>
                 </ul>
             </div>
             <p class="signature"> <b>Creado por:</b> <span>Mariana Cortés Rueda</span></p>
         </footer>
+        <aside class="modalCheckout_background">
+            <div class="modalCheckout_proper">
+                <i class="far fa-times-circle"></i>
+                <h3>¡Un último paso antes de terminar!</h3>
+                <p>Tómale una <span>*captura de pantalla*</span> a esta información <br>
+                    y envíala al número <a href="tel:+573107910978">310 7910978</a> <br>
+                    o al correo <a href="mailto:delapiapostres@gmail.com">delapiapostres@gmail.com</a>
+                    <br>
+                    <span>¡Te confirmaremos al instante!</span>
+                </p>
+                <div class="modalCheckout_detalles">
+                    <h5>Verifica los detal les de tu pedido</h5>
+                    <p class="modalCheckout_detalles_postre">
+                        Tu postre: <span id="modalCheckout_detalles_postre"></span>
+                    </p>
+                    <p class="modalCheckout_detalles_size">
+                        Tamaño: <span id="modalCheckout_detalles_size"></span>
+                    </p>
+                    <p class="modalCheckout_detalles_custom">
+                        Personalización: <span id="modalCheckout_detalles_custom"></span>
+                    </p>
+                    <p class="modalCheckout_detalles_fecha">
+                        Tiempo de entrega: <span id="modalCheckout_detalles_fecha"></span>
+                    </p>
+                    <p class="modalCheckout_detalles_envio">
+                        Modo de entrega: <span id="modalCheckout_detalles_envio"></span>
+                    </p>
+                    <p class="modalCheckout_detalles_pago">
+                        Modo de entrega: <span id="modalCheckout_detalles_pago"></span>
+                    </p>
+                    <p class="modalCheckout_detalles_ref">
+                        Referencia del pedido: <span id="modalCheckout_detalles_ref"></span>
+                    </p>
+                    <p class="modalCheckout_detalles_pay">
+                        Modo de pago: <span id="modalCheckout_detalles_pay"></span>
+                    </p>
+                </div>
+            </div>
+        </aside>
     </main>
-    <script src="/delapia/dist/js/main.js"></script>
+    <script src="/dist/js/main.js"></script>
 </body>
 </html>

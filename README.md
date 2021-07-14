@@ -102,3 +102,5 @@ Documentación del código y recomendaciones
 - Terminal: WSL 1 (Ubuntu)
 - *Preprocesador:* Sass para CSS3 (v 1.35.2 compiled with dart2js 2.13.4) para compilar usar
     ``sass --watch src/scss:dist/css/main.css``
+- Íconos de [FontAwesome](https://fontawesome.com/) (Menú hamburguesa, social media)
+- Mapa cortesía de [Google Maps](https://www.google.com/intl/es-419_co/maps/about/mymaps/)

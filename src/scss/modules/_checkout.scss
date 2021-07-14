@@ -1,0 +1,22 @@
+.modalCheckout{
+    &_background{
+        display: none;
+        background-color: #4f2f2fd1;
+        padding: 30px;
+        position: absolute;
+        top: 140px;
+        height: 300vh;
+    }
+    &_proper{
+        background-color: darksalmon;
+        border-radius: 10px;
+        padding: 20px;
+        margin: 20px;
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        i{
+            align-self: flex-end;
+        }
+    }
+}
