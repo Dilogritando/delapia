@@ -30,23 +30,20 @@ time, mark, audio, video {
  vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, hgroup, menu, section {
+article, aside, details, figcaption, figure, hgroup, menu, section {
  display: block;
 }
 body {
  line-height: 1;
  width: 100vw;
 }
-section{
-    margin: 20px 0;
-    padding: 10px 5px;
-    border-bottom: 1px solid maroon;
-}
 article{
     margin: 10px 0;
     padding: 10px 5px;
     border-radius: 10px;
+    @media #{variables.$tablet}{
+        padding: 5px 5px;
+    }
 }
 ol, ul {
  list-style: none;
@@ -63,7 +60,6 @@ q:before, q:after {
 h1, h2, h3, h4, h5, h6 {
  font-family: variables.$font-title;
  color: variables.$logoColor;
- margin: 20px 0 10px 0;
  border: 0;
 }
 

@@ -16,13 +16,26 @@ $logoColor: #762011;
 $azul: #5864B7;
 $pina: #ffac33;
 $corona: #b98f8d;
-$fresa: #EF3445
-
-
-
+$fresa: #EF3445;
 
 /*
 #ffac33 —- piña oscuro
 #ffac4d —- piña claro
 #EF3445 —- fresa del logo
 #5C913B —- hojas piña verde */
+
+//Breakpoints - Media Queries
+//Mobile
+$mobileMin: 319px;
+$mobileMax: 600px;
+$mobile: "screen and (min-width: 319px) and (max-width: 600px)";
+
+//Tablet
+$tabletMin: 601px;
+$tabletMax: 1023px;
+$tablet: "screen and (min-width: 601px) and (max-width: 1023px)";
+
+//Laptop
+$laptopMin: 1024px;
+$laptopMax: 2559px;
+$laptop: "screen and (min-width: 1024px) and (max-width: 2559px)";

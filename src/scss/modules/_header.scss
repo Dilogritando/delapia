@@ -5,14 +5,30 @@
     background-color: variables.$logoColor;
     color: white;
     text-align: center;
-    font-size: 12px;
-    padding: 10px 0;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
     position: sticky;
     top: 0;
+    @media #{variables.$mobile} {
+        font-size: 12px;
+        padding: 10px 0;
+    }
+    @media #{variables.$tablet} {
+        height: 45px;
+        span{
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            width: 70%;
+            justify-content: space-around;
+            p{
+                font-size: 14px;
+            }
+        }
+    }
     span{
         line-height: 0.3;
         padding: 0 0 0 32px;
@@ -36,6 +52,9 @@ header{
     h1{
         font-size: 22px;
         text-align: center;
+        @media #{variables.$tablet}{
+            font-size: 30px;
+        }
     }
     button{
         border-radius: 15px;
@@ -46,10 +65,4 @@ header{
         background-color: beige;
         font-family: 'Josefin';
     }
-}
-.formulario{
-    border: 1px solid maroon;
-    border-radius: 30px;
-    padding: 10px;
-    margin: 5px;
 }

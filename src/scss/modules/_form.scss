@@ -1,9 +1,19 @@
 @use 'variables';
 
 .formulario{
+    background: url("/src/1Assets/6ImagenesProducto/limon2.jpeg");
+    border: 1px solid maroon;
+    border-radius: 30px;
     display: flex;
     flex-direction: column;
-    background: url("/src/1Assets/6ImagenesProducto/limon2.jpeg");
+    @media #{variables.$mobile}{
+        padding: 10px;
+        margin: 5px;
+    }
+    @media #{variables.$tablet}{
+        margin: 30px 15% 50px 15%;
+        padding: 5px 20px;
+    }
     &_tipo{
         display: flex;
         flex-direction: column;

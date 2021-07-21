@@ -1,36 +1,108 @@
 @use 'variables';
+h3{
+    font-size: 12px;
+    @media #{variables.$tablet}{
+        font-size: 18px;
 
+    }
+}
+h5 {
+    text-align: center;
+    @media #{variables.$tablet}{
+        font-size: 20px;
+    }
+}
+p{
+    line-height: 1.3;
+    @media #{variables.$mobile} {
+        font-size: 12px;
+        padding: 10px 0;
+    }
+    @media #{variables.$tablet}{
+        font-size: 14px;
+    }
+}
+ul button {
+    color: variables.$azul;
+    border-radius: 15px;
+    border: 1px solid;
+    margin: 5px;
+    &:hover{
+        color: darksalmon;
+    }
+    @media #{variables.$tablet}{
+        margin: 10px;
+        height: 40px;
+        width: 115px;
+    }
+}
+section {
+    @media #{variables.$mobile}{
+        margin: 0 10px;
+    }
+    @media #{variables.$tablet}{
+        margin: 20px 30px;
+    }
+}
 .menu{
-    margin: 0 10px;
     h2{
         text-align: center;
+        @media #{variables.$mobile}{
+            margin: 70px 0 0 0;
+        }
+    }
+    article {
+        h2{
+            padding: 5px 5px;
+            margin: 0;
+            font-size: 24px;
+            &::after,&::before{
+                content: "    🥮    ";
+            }
+        }
     }
     .menu_pies_opciones, .menu_ponques_opciones, .menu_galletas_opciones, .menu_quiches_opciones{
+        @media #{variables.$tablet}{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            align-items: flex-start;
+            overflow: scroll;
+            justify-content: flex-start;
+        }
         li {
           border: 1px solid variables.$corona;
           border-radius: 15px;
           margin: 5px;
           padding: 5px;
-          img {
-            width: 50%;
-            border-radius: 150px;
-            margin: 0 0 0 25%;
+            @media #{variables.$tablet} {
+                display: flex;
+                flex-direction: column;
+                width: 330px;
+                &::after{
+                    font-family: "Font Awesome 5 Free";
+                    font-weight: 900;
+                    content: "\203a";
+                }
+            }
+            img {
+                width: 50%;
+                border-radius: 150px;
+                margin: 0 0 0 25%;
+                aspect-ratio: 1;
+                @media #{variables.$tablet} {
+                    width: 74%;
+                    border-radius: 135px;
+                    margin: 0 auto;
+                }
             }
             h4{
                 font-size: 14px;
                 color: #e4624b;
+                @media #{variables.$tablet}{
+                    font-size: 18px;
+                }
             }
-        }
-    }
-    li {
-        img {
-            width: 50%;
-            border-radius: 150px;
-            margin: 0 0 0 25%;
-        }
-        h4{
-            font-size: 14px;
-            color: #e4624b;
         }
     }
     table, th, td {
@@ -47,7 +119,13 @@
         padding: 10px;
     }
     &_intro{
-       margin: 0 0 55px 0;
+        @media #{variables.$mobile}{
+            margin: 0 10px;
+        }
+        @media #{variables.$tablet}{
+            margin: 0 0 16px 0;
+            text-align: center;
+        }
     }
     .precios{
         cursor: pointer;
@@ -72,31 +150,15 @@
         background-color: #5c913b5c;
     }
 }
-
-ul button {
-    color: variables.$azul;
-    border-radius: 15px;
-    border: 1px solid;
-    margin: 5px;
-    &:hover{
-        color: darksalmon;
-    }
-}
 .product_buttons{
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-h3{
-    font-size: 12px;
-}
-h5 {
-    text-align: center;
-}
-
-p{
-    line-height: 1.3;
-    font-size: 12px;
+    @media #{variables.$tablet}{
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
 }
 .domicilios{
     text-align: center;

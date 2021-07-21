@@ -3,15 +3,16 @@
 footer{
     margin: 45px 0 0 0;
     background-color: variables.$logoColor;
-    .logo_footer{
-        width: 90px;
-        margin: 5px;
-        display: inline-block;
+    @media #{variables.$tablet}{
+        display: flex;
     }
     .contacto{
         font-size: 12px;
         display: flex;
         text-align: center;
+        @media #{variables.$tablet}{
+            margin: 0 15px 0 0;
+        }
         p{
             color: white;
             margin: 10px 0;
@@ -23,8 +24,25 @@ footer{
                 color: white;
             }
         }
+        img {
+            display: inline-block;
+            @media #{variables.$mobile}{
+                width: 100px;
+                height: 100px;
+                margin: 5px;
+            }
+            @media #{variables.$tablet} {
+                height: 130px;
+                margin: 15px;
+            }
+        }
         &_datos{
-            padding: 15px;
+            @media #{variables.$mobile}{
+                padding: 15px 15px 0 15px;
+            }
+            @media #{variables.$tablet}{
+                align-self: center;
+            }
         }
     }
     .social {
@@ -38,6 +56,14 @@ footer{
         ul{
             display: flex;
             justify-content: space-around;
+            li{
+                @media #{variables.$tablet}{
+                    height: 40px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                }
+            }
             i{
                 color: white;
                 font-size: 14px;
@@ -47,12 +73,20 @@ footer{
                 margin: 0 5px;
             }
         }
+        @media #{variables.$tablet}{
+            align-self: center;
+            text-align: center;
+        }
     }
     .signature{
+        margin: 0;
         padding: 30px 0 0 0;
         font-size: 10px;
         text-align: center;
         color: white;
+        @media #{variables.$tablet}{
+            align-self: flex-end
+        }
         b{
             color: white;
         }

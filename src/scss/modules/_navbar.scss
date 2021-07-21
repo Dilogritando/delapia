@@ -17,6 +17,11 @@
     z-index: 2;
     line-height: 2;
     padding: 10px;
+    @media #{variables.$tablet}{
+        top: 45px;
+        height: 600px;
+        width: 270px;
+    }
     ul {
         display: flex;
         flex-direction: column;
@@ -29,9 +34,15 @@
     &_options{
         &_categories {
             text-align: center;
+            @media #{variables.$tablet}{
+                h2 {
+                    margin: 0;
+                }
+            }
             .nav_subcategories_item{
                 text-align: left;
             }
+
         }
         &_last{
             text-align: center;

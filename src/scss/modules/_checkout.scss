@@ -1,3 +1,5 @@
+@use 'variables';
+
 .modalCheckout{
     &_background{
         display: none;
@@ -6,6 +8,10 @@
         position: absolute;
         top: 140px;
         height: 300vh;
+        @media #{variables.$tablet}{
+            height: 425vh;
+            width: 92vw;
+        }
     }
     &_proper{
         background-color: darksalmon;
@@ -15,8 +21,19 @@
         height: 500px;
         display: flex;
         flex-direction: column;
+        @media #{variables.$tablet}{
+            height: 850px;
+        }
         i{
             align-self: flex-end;
+        }
+        @media #{variables.$tablet}{
+            h3{
+                font-size: 30px;
+            }
+            p{
+                font-size: 22px;
+            }
         }
     }
 }
