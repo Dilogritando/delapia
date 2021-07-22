@@ -60,6 +60,19 @@ section {
                 content: "    🥮    ";
             }
         }
+        @media #{variables.$laptop} {
+            height: 400px;
+            overflow: scroll;
+            ul {
+                width: 350%;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                align-items: flex-start;
+                overflow: scroll;
+                justify-content: flex-start;
+            }
+        }
     }
     .menu_pies_opciones, .menu_ponques_opciones, .menu_galletas_opciones, .menu_quiches_opciones{
         @media #{variables.$tablet}{
@@ -75,17 +88,21 @@ section {
           border-radius: 15px;
           margin: 5px;
           padding: 5px;
-            @media #{variables.$tablet} {
-                display: flex;
-                flex-direction: column;
-                width: 330px;
-                /* &::after{
-                    font-family: "Font Awesome 5 Free";
-                    font-weight: 900;
-                    content: "\203a";
-                } */
-            }
-            img {
+          @media #{variables.$tablet} {
+              display: flex;
+              flex-direction: column;
+              width: 330px;
+          }
+          @media #{variables.$laptop} {
+              display: flex;
+              flex-direction: column;
+              width: 50%;
+              h3{
+                font-size: 20px;
+                margin: 0 0 12px 0;
+              }
+          }
+          img {
                 width: 50%;
                 border-radius: 150px;
                 margin: 0 0 0 25%;
@@ -94,6 +111,10 @@ section {
                     width: 74%;
                     border-radius: 135px;
                     margin: 0 auto;
+                }
+                @media #{variables.$laptop} {
+                    width: 43%;
+                    margin: 0;
                 }
             }
             h4{
@@ -141,6 +162,9 @@ section {
         @media #{variables.$tablet}{
             display: none;
         }
+        @media #{variables.$laptop}{
+            display: none;
+        }
     }
     &_pies{
         background-color: #ffac335e;
@@ -153,6 +177,11 @@ section {
     }
     &_quiches{
         background-color: #5c913b5c;
+    }
+    @media #{variables.$laptop} {
+        width: 46%;
+        height: 860px;
+        overflow: scroll;
     }
 }
 .product_buttons{
@@ -167,6 +196,9 @@ section {
 }
 .domicilios{
     text-align: center;
+    @media #{variables.$laptop} {
+        margin: 0 auto;
+    }
 }
 iframe {
     width: 90vw;

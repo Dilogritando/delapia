@@ -1,10 +1,20 @@
 @use 'variables';
 
 footer{
+    width: 100%;
     margin: 45px 0 0 0;
     background-color: variables.$logoColor;
+    @media #{variables.$mobile}{
+        display: block;
+    }
     @media #{variables.$tablet}{
         display: flex;
+    }
+    @media #{variables.$laptop}{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
     }
     .contacto{
         font-size: 12px;
@@ -13,9 +23,13 @@ footer{
         @media #{variables.$tablet}{
             margin: 0 15px 0 0;
         }
+        @media #{variables.$laptop}{
+            align-items: center;
+        }
         p{
             color: white;
             margin: 10px 0;
+            padding: 0;
             b{
                 color: white;
                 font-weight: 300;
@@ -33,6 +47,10 @@ footer{
             }
             @media #{variables.$tablet} {
                 height: 130px;
+                margin: 15px;
+            }
+            @media #{variables.$laptop} {
+                height: 200px;
                 margin: 15px;
             }
         }

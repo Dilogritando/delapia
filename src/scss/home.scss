@@ -19,7 +19,7 @@ b, u, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, aside, canvas, details, embed,
-figure, figcaption, header, hgroup,
+figure, figcaption, hgroup,
 menu, output, ruby, summary,
 time, mark, audio, video {
  margin: 0;
@@ -36,6 +36,13 @@ article, aside, details, figcaption, figure, hgroup, menu, section {
 body {
  line-height: 1;
  width: 100vw;
+}
+main{
+    @media #{variables.$laptop}{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
 }
 article{
     margin: 10px 0;
@@ -56,19 +63,16 @@ q:before, q:after {
  content: '';
  content: none;
 }
-
 h1, h2, h3, h4, h5, h6 {
  font-family: variables.$font-title;
  color: variables.$logoColor;
  border: 0;
 }
-
 legend, label, p, a, b, i, th {
     font-family: variables.$font-body;
     color: #000;
     line-height: 1.3;
 }
-
 a {
     text-decoration: none;
 }
