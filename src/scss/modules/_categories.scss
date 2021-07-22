@@ -79,11 +79,11 @@ section {
                 display: flex;
                 flex-direction: column;
                 width: 330px;
-                &::after{
+                /* &::after{
                     font-family: "Font Awesome 5 Free";
                     font-weight: 900;
                     content: "\203a";
-                }
+                } */
             }
             img {
                 width: 50%;
@@ -135,7 +135,12 @@ section {
         }
     }
     .porciones_precios{
-        display: none;
+        @media #{variables.$mobile}{
+            display: none;
+        }
+        @media #{variables.$tablet}{
+            display: none;
+        }
     }
     &_pies{
         background-color: #ffac335e;

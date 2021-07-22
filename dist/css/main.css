@@ -281,11 +281,11 @@ ul button:hover {
     display: flex;
     flex-direction: column;
     width: 330px;
-  }
-  .menu .menu_pies_opciones li::after, .menu .menu_ponques_opciones li::after, .menu .menu_galletas_opciones li::after, .menu .menu_quiches_opciones li::after {
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    content: "›";
+    /* &::after{
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        content: "\203a";
+    } */
   }
 }
 .menu .menu_pies_opciones li img, .menu .menu_ponques_opciones li img, .menu .menu_galletas_opciones li img, .menu .menu_quiches_opciones li img {
@@ -341,8 +341,15 @@ ul button:hover {
   color: #5864B7;
   text-decoration: underline;
 }
-.menu .porciones_precios {
-  display: none;
+@media screen and (min-width: 319px) and (max-width: 600px) {
+  .menu .porciones_precios {
+    display: none;
+  }
+}
+@media screen and (min-width: 601px) and (max-width: 1023px) {
+  .menu .porciones_precios {
+    display: none;
+  }
 }
 .menu_pies {
   background-color: #ffac335e;
