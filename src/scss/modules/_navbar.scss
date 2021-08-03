@@ -5,50 +5,58 @@
     font-size: 30px;
 }
 .nav{
-    height: 455px;
-    position: absolute;
-    right: 2px;
-    top: 53px;
     display: none;
-    /* display: flex; */
-    overflow: scroll;
-    border: solid 1px variables.$logoColor;
-    background-color: #f6d8db;
-    z-index: 2;
-    line-height: 2;
-    padding: 10px;
-    @media #{variables.$tablet}{
-        top: 45px;
-        height: 600px;
-        width: 270px;
-    }
-    ul {
+    &.visible {
         display: flex;
-        flex-direction: column;
-    }
-    a:hover{
-        text-decoration: underline;
-        color: variables.$logoColor;
-        background-color: darksalmon;
-    }
-    &_options{
-        &_categories {
-            text-align: center;
-            @media #{variables.$tablet}{
-                h2 {
-                    margin: 0;
+        height: 455px;
+        position: absolute;
+        right: 2px;
+        top: 53px;
+        overflow: scroll;
+        border: solid 1px variables.$logoColor;
+        background-color: #f6d8db;
+        z-index: 2;
+        line-height: 2;
+        padding: 10px;
+        @media #{variables.$tablet}{
+            top: 45px;
+            height: 600px;
+            width: 270px;
+        }
+        @media #{variables.$laptop}{
+            top: 60px;
+            right: 2px;
+        }
+        ul {
+            display: flex;
+            flex-direction: column;
+        }
+        a:hover{
+            text-decoration: underline;
+            color: variables.$logoColor;
+            background-color: darksalmon;
+        }
+        &_options{
+            &_categories {
+                text-align: center;
+                @media #{variables.$tablet}{
+                    h2 {
+                        margin: 0;
+                    }
+                }
+                @media #{variables.$laptop}{
+                    margin: 0 0 15px 0;
+                }
+
+                .nav_subcategories_item{
+                    text-align: left;
                 }
             }
-            .nav_subcategories_item{
-                text-align: left;
+            &_last{
+                text-align: center;
+                font-weight: bold;
+                margin: 5px;
             }
-
-        }
-        &_last{
-            text-align: center;
-            font-weight: bold;
-            margin: 5px;
         }
     }
-
 }

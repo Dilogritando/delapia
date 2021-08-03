@@ -54,7 +54,7 @@
     font-size: 14px;
   }
 }
-@media (min-width: 1024px) and (max-width: 2559px) {
+@media (min-width: 1024px) {
   .topbar {
     height: 60px;
   }
@@ -101,7 +101,7 @@ header button {
   background-color: beige;
   font-family: "Josefin";
 }
-@media (min-width: 1024px) and (max-width: 2559px) {
+@media (min-width: 1024px) {
   header {
     height: 200px;
     border: none;
@@ -125,12 +125,14 @@ header button {
 }
 
 .nav {
+  display: none;
+}
+.nav.visible {
+  display: flex;
   height: 455px;
   position: absolute;
   right: 2px;
   top: 53px;
-  display: none;
-  /* display: flex; */
   overflow: scroll;
   border: solid 1px #762011;
   background-color: #f6d8db;
@@ -139,50 +141,60 @@ header button {
   padding: 10px;
 }
 @media (min-width: 601px) and (max-width: 1023px) {
-  .nav {
+  .nav.visible {
     top: 45px;
     height: 600px;
     width: 270px;
   }
 }
-.nav ul {
+@media (min-width: 1024px) {
+  .nav.visible {
+    top: 60px;
+    right: 2px;
+  }
+}
+.nav.visible ul {
   display: flex;
   flex-direction: column;
 }
-.nav a:hover {
+.nav.visible a:hover {
   text-decoration: underline;
   color: #762011;
   background-color: darksalmon;
 }
-.nav_options_categories {
+.nav.visible_options_categories {
   text-align: center;
 }
 @media (min-width: 601px) and (max-width: 1023px) {
-  .nav_options_categories h2 {
+  .nav.visible_options_categories h2 {
     margin: 0;
   }
 }
-.nav_options_categories .nav_subcategories_item {
+@media (min-width: 1024px) {
+  .nav.visible_options_categories {
+    margin: 0 0 15px 0;
+  }
+}
+.nav.visible_options_categories .nav_subcategories_item {
   text-align: left;
 }
-.nav_options_last {
+.nav.visible_options_last {
   text-align: center;
   font-weight: bold;
   margin: 5px;
 }
 
 .formulario {
+  width: 80%;
   background: url("/src/1Assets/6ImagenesProducto/limon2.jpeg");
+  background-repeat: no-repeat;
   border: 1px solid maroon;
   border-radius: 30px;
   display: flex;
   flex-direction: column;
-}
-@media (min-width: 319px) and (max-width: 600px) {
-  .formulario {
-    padding: 10px;
-    margin: 5px;
-  }
+  padding: 10px;
+  margin: 5px auto;
+  max-width: 1000px;
 }
 @media (min-width: 601px) and (max-width: 1023px) {
   .formulario {
@@ -190,12 +202,15 @@ header button {
     padding: 5px 20px;
   }
 }
-@media (min-width: 1024px) and (max-width: 2559px) {
+@media (min-width: 1024px) {
   .formulario {
     width: 400px;
     height: 810px;
     padding: 20px;
     margin: 10px 40px;
+  }
+  .formulario h2 {
+    margin: 5px 0 10px 0;
   }
 }
 .formulario_tipo {
@@ -224,12 +239,25 @@ header button {
   display: none;
 }
 
+@media (min-width: 1024px) {
+  h2 {
+    font-size: 22px;
+    margin: 0;
+  }
+}
+
 h3 {
   font-size: 12px;
 }
 @media (min-width: 601px) and (max-width: 1023px) {
   h3 {
     font-size: 18px;
+  }
+}
+@media (min-width: 1024px) {
+  h3 {
+    font-size: 20px;
+    margin: 0;
   }
 }
 
@@ -301,7 +329,7 @@ ul button:hover {
 .menu article h2::after, .menu article h2::before {
   content: "    🥮    ";
 }
-@media (min-width: 1024px) and (max-width: 2559px) {
+@media (min-width: 1024px) {
   .menu article {
     height: 400px;
     overflow: scroll;
@@ -316,33 +344,35 @@ ul button:hover {
     justify-content: flex-start;
   }
 }
-@media (min-width: 601px) and (max-width: 1023px) {
-  .menu .menu_pies_opciones, .menu .menu_ponques_opciones, .menu .menu_galletas_opciones, .menu .menu_quiches_opciones {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-items: flex-start;
-    overflow: scroll;
-    justify-content: flex-start;
-  }
+.menu .menu_pies_opciones, .menu .menu_ponques_opciones, .menu .menu_galletas_opciones, .menu .menu_quiches_opciones {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  overflow: scroll;
 }
 .menu .menu_pies_opciones li, .menu .menu_ponques_opciones li, .menu .menu_galletas_opciones li, .menu .menu_quiches_opciones li {
   border: 1px solid #b98f8d;
   border-radius: 15px;
   margin: 5px;
   padding: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 170px;
 }
 @media (min-width: 601px) and (max-width: 1023px) {
   .menu .menu_pies_opciones li, .menu .menu_ponques_opciones li, .menu .menu_galletas_opciones li, .menu .menu_quiches_opciones li {
-    display: flex;
-    flex-direction: column;
+    min-width: 260px;
     width: 330px;
   }
 }
-@media (min-width: 1024px) and (max-width: 2559px) {
+@media (min-width: 1024px) {
   .menu .menu_pies_opciones li, .menu .menu_ponques_opciones li, .menu .menu_galletas_opciones li, .menu .menu_quiches_opciones li {
-    display: flex;
-    flex-direction: column;
     width: 50%;
   }
   .menu .menu_pies_opciones li h3, .menu .menu_ponques_opciones li h3, .menu .menu_galletas_opciones li h3, .menu .menu_quiches_opciones li h3 {
@@ -363,7 +393,7 @@ ul button:hover {
     margin: 0 auto;
   }
 }
-@media (min-width: 1024px) and (max-width: 2559px) {
+@media (min-width: 1024px) {
   .menu .menu_pies_opciones li img, .menu .menu_ponques_opciones li img, .menu .menu_galletas_opciones li img, .menu .menu_quiches_opciones li img {
     width: 43%;
     margin: 0;
@@ -376,6 +406,25 @@ ul button:hover {
 @media (min-width: 601px) and (max-width: 1023px) {
   .menu .menu_pies_opciones li h4, .menu .menu_ponques_opciones li h4, .menu .menu_galletas_opciones li h4, .menu .menu_quiches_opciones li h4 {
     font-size: 18px;
+  }
+}
+.menu .menu_pies_opciones li:not(:last-child):after, .menu .menu_ponques_opciones li:not(:last-child):after, .menu .menu_galletas_opciones li:not(:last-child):after, .menu .menu_quiches_opciones li:not(:last-child):after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "";
+  position: relative;
+  top: -360px;
+  left: 173px;
+  color: #b98f8d;
+}
+@media (min-width: 601px) and (max-width: 1023px) {
+  .menu .menu_pies_opciones li:not(:last-child):after, .menu .menu_ponques_opciones li:not(:last-child):after, .menu .menu_galletas_opciones li:not(:last-child):after, .menu .menu_quiches_opciones li:not(:last-child):after {
+    left: 55%;
+  }
+}
+@media (min-width: 1024px) {
+  .menu .menu_pies_opciones li:not(:last-child):after, .menu .menu_ponques_opciones li:not(:last-child):after, .menu .menu_galletas_opciones li:not(:last-child):after, .menu .menu_quiches_opciones li:not(:last-child):after {
+    left: 55%;
   }
 }
 .menu table, .menu th, .menu td {
@@ -419,7 +468,7 @@ ul button:hover {
     display: none;
   }
 }
-@media (min-width: 1024px) and (max-width: 2559px) {
+@media (min-width: 1024px) {
   .menu .porciones_precios {
     display: none;
   }
@@ -436,7 +485,7 @@ ul button:hover {
 .menu_quiches {
   background-color: #5c913b5c;
 }
-@media (min-width: 1024px) and (max-width: 2559px) {
+@media (min-width: 1024px) {
   .menu {
     width: 46%;
     height: 860px;
@@ -460,9 +509,12 @@ ul button:hover {
 .domicilios {
   text-align: center;
 }
-@media (min-width: 1024px) and (max-width: 2559px) {
+@media (min-width: 1024px) {
   .domicilios {
     margin: 0 auto;
+  }
+  .domicilios h5 {
+    font-size: 18px;
   }
 }
 
@@ -525,7 +577,7 @@ footer {
     display: flex;
   }
 }
-@media (min-width: 1024px) and (max-width: 2559px) {
+@media (min-width: 1024px) {
   footer {
     display: flex;
     flex-direction: row;
@@ -543,7 +595,7 @@ footer .contacto {
     margin: 0 15px 0 0;
   }
 }
-@media (min-width: 1024px) and (max-width: 2559px) {
+@media (min-width: 1024px) {
   footer .contacto {
     align-items: center;
   }
@@ -576,7 +628,7 @@ footer .contacto img {
     margin: 15px;
   }
 }
-@media (min-width: 1024px) and (max-width: 2559px) {
+@media (min-width: 1024px) {
   footer .contacto img {
     height: 200px;
     margin: 15px;
@@ -674,7 +726,7 @@ body {
   width: 100vw;
 }
 
-@media (min-width: 1024px) and (max-width: 2559px) {
+@media (min-width: 1024px) {
   main {
     display: flex;
     flex-direction: row;
@@ -722,5 +774,3 @@ legend, label, p, a, b, i, th {
 a {
   text-decoration: none;
 }
-
-/*# sourceMappingURL=main.css.map */

@@ -1,15 +1,16 @@
 @use 'variables';
 
 .formulario{
+    width: 80%;
     background: url("/src/1Assets/6ImagenesProducto/limon2.jpeg");
+    background-repeat: no-repeat;
     border: 1px solid maroon;
     border-radius: 30px;
     display: flex;
     flex-direction: column;
-    @media #{variables.$mobile}{
-        padding: 10px;
-        margin: 5px;
-    }
+    padding: 10px;
+    margin: 5px auto;
+    max-width: 1000px;
     @media #{variables.$tablet}{
         margin: 30px 15% 50px 15%;
         padding: 5px 20px;
@@ -19,6 +20,12 @@
         height: 810px;
         padding: 20px;
         margin: 10px 40px;
+        h2{
+            margin: 5px 0 10px 0 ;
+        }
+    }
+    form{
+
     }
     &_tipo{
         display: flex;

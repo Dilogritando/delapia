@@ -1,9 +1,18 @@
 @use 'variables';
+h2{
+    @media #{variables.$laptop}{
+        font-size: 22px;
+        margin: 0;
+    }
+}
 h3{
     font-size: 12px;
     @media #{variables.$tablet}{
         font-size: 18px;
-
+    }
+    @media #{variables.$laptop}{
+        font-size: 20px;
+        margin: 0;
     }
 }
 h5 {
@@ -75,53 +84,70 @@ section {
         }
     }
     .menu_pies_opciones, .menu_ponques_opciones, .menu_galletas_opciones, .menu_quiches_opciones{
-        @media #{variables.$tablet}{
-            display: flex;
-            flex-direction: row;
-            flex-wrap: nowrap;
-            align-items: flex-start;
-            overflow: scroll;
-            justify-content: flex-start;
-        }
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: flex-start;
+        justify-content: flex-start;
+        overflow: scroll;
         li {
-          border: 1px solid variables.$corona;
-          border-radius: 15px;
-          margin: 5px;
-          padding: 5px;
-          @media #{variables.$tablet} {
-              display: flex;
-              flex-direction: column;
-              width: 330px;
-          }
-          @media #{variables.$laptop} {
-              display: flex;
-              flex-direction: column;
-              width: 50%;
-              h3{
-                font-size: 20px;
-                margin: 0 0 12px 0;
-              }
-          }
-          img {
+            border: 1px solid variables.$corona;
+            border-radius: 15px;
+            margin: 5px;
+            padding: 5px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-width: 170px;
+            @media #{variables.$tablet} {
+                min-width: 260px;
+                width: 330px;
+            }
+            @media #{variables.$laptop} {
                 width: 50%;
-                border-radius: 150px;
-                margin: 0 0 0 25%;
-                aspect-ratio: 1;
-                @media #{variables.$tablet} {
-                    width: 74%;
-                    border-radius: 135px;
-                    margin: 0 auto;
+                h3{
+                    font-size: 20px;
+                    margin: 0 0 12px 0;
                 }
-                @media #{variables.$laptop} {
-                    width: 43%;
-                    margin: 0;
-                }
+            }
+            img {
+                    width: 50%;
+                    border-radius: 150px;
+                    margin: 0 0 0 25%;
+                    aspect-ratio: 1;
+                    @media #{variables.$tablet} {
+                        width: 74%;
+                        border-radius: 135px;
+                        margin: 0 auto;
+                    }
+                    @media #{variables.$laptop} {
+                        width: 43%;
+                        margin: 0;
+                    }
             }
             h4{
                 font-size: 14px;
                 color: #e4624b;
                 @media #{variables.$tablet}{
                     font-size: 18px;
+                }
+            }
+            &:not(:last-child):after{
+                font-family: "Font Awesome 5 Free";
+                font-weight: 900;
+                content: "\f0a9";
+                position: relative;
+                top: -360px;
+                left: 173px;
+                color: variables.$corona;
+                @media #{variables.$tablet}{
+                    left: 55%;
+                }
+                @media #{variables.$laptop} {
+                    left: 55%;
                 }
             }
         }
@@ -198,6 +224,9 @@ section {
     text-align: center;
     @media #{variables.$laptop} {
         margin: 0 auto;
+        h5{
+            font-size: 18px;
+        }
     }
 }
 iframe {
