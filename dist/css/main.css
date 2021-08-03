@@ -188,12 +188,14 @@ header button {
   width: 80%;
   background: url("/src/1Assets/6ImagenesProducto/limon2.jpeg");
   background-repeat: no-repeat;
+  background-size: cover;
   border: 1px solid maroon;
   border-radius: 30px;
   display: flex;
   flex-direction: column;
   padding: 10px;
   margin: 5px auto;
+  height: auto;
   max-width: 1000px;
 }
 @media (min-width: 601px) and (max-width: 1023px) {
@@ -205,7 +207,6 @@ header button {
 @media (min-width: 1024px) {
   .formulario {
     width: 400px;
-    height: 810px;
     padding: 20px;
     margin: 10px 40px;
   }
@@ -233,10 +234,14 @@ header button {
 }
 .formulario_valida-title:hover {
   text-decoration: underline;
-  font-size: 18px;
+  font-size: 30px;
 }
-.formulario #formulario_mapa {
+.formulario_valida_mapa {
   display: none;
+}
+.formulario_valida_mapa.visible {
+  display: block;
+  width: 100%;
 }
 
 @media (min-width: 1024px) {
@@ -427,6 +432,14 @@ ul button:hover {
     left: 55%;
   }
 }
+.menu .menu_pies_opciones_precios, .menu .menu_ponques_opciones_precios, .menu .menu_galletas_opciones_precios, .menu .menu_quiches_opciones_precios {
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  width: 100%;
+}
 .menu table, .menu th, .menu td {
   border-collapse: collapse;
   border: 1px solid #762011;
@@ -458,20 +471,13 @@ ul button:hover {
   color: #5864B7;
   text-decoration: underline;
 }
-@media (min-width: 319px) and (max-width: 600px) {
-  .menu .porciones_precios {
-    display: none;
-  }
+.menu .porciones_precios {
+  display: none;
 }
-@media (min-width: 601px) and (max-width: 1023px) {
-  .menu .porciones_precios {
-    display: none;
-  }
-}
-@media (min-width: 1024px) {
-  .menu .porciones_precios {
-    display: none;
-  }
+.menu .porciones_precios.visible {
+  display: block;
+  overflow: scroll;
+  width: 100%;
 }
 .menu_pies {
   background-color: #ffac335e;
@@ -517,8 +523,7 @@ ul button:hover {
     font-size: 18px;
   }
 }
-
-iframe {
+.domicilios iframe {
   width: 90vw;
 }
 

@@ -151,6 +151,14 @@ section {
                 }
             }
         }
+        &_precios{
+            display: flex;
+            flex-direction: column;
+            align-content: flex-start;
+            align-items: flex-start;
+            flex-wrap: nowrap;
+            width: 100%;
+        }
     }
     table, th, td {
         border-collapse: collapse;
@@ -182,14 +190,11 @@ section {
         }
     }
     .porciones_precios{
-        @media #{variables.$mobile}{
-            display: none;
-        }
-        @media #{variables.$tablet}{
-            display: none;
-        }
-        @media #{variables.$laptop}{
-            display: none;
+        display: none;
+        &.visible {
+            display: block;
+            overflow: scroll;
+            width: 100%;
         }
     }
     &_pies{
@@ -228,7 +233,7 @@ section {
             font-size: 18px;
         }
     }
-}
-iframe {
-    width: 90vw;
+    iframe {
+        width: 90vw;
+    }
 }
